@@ -1,0 +1,4 @@
+ShareAnything.MainActivity, ShareAnything;md56e45c3ef4f51e518d4c599724433ec5f.MainActivity
+ShareAnything.MainActivity, ShareAnything, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56e45c3ef4f51e518d4c599724433ec5f.MainActivity
+ShareAnything.MainActivity;md56e45c3ef4f51e518d4c599724433ec5f.MainActivity
+shareanything.MainActivity;md56e45c3ef4f51e518d4c599724433ec5f.MainActivity

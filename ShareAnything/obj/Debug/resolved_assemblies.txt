@@ -1,0 +1,9 @@
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\ShareAnything.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Mono.Android.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\mscorlib.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Core.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.ServiceModel.Internals.dll
