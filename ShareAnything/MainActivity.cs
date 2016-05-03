@@ -28,7 +28,7 @@ namespace ShareAnything
 
             button.Click += (o, e) =>
             {
-                button.Text = string.Format("{0} clicks!", count++);
+                button.Text = $"{count++} clicks";
             };
         }
     }
