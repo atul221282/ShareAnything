@@ -5,11 +5,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Net.Http.Headers;
 
 namespace ShareAnything
 {
     [Activity(Label = "ShareAnything", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : BaseActivity
     {
         int count = 1;
 
@@ -24,13 +27,28 @@ namespace ShareAnything
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            //button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            var client = new HttpClient
+            {
+                Timeout = TimeSpan.FromSeconds(15),
+                BaseAddress = new Uri("http://192.168.0.8/ShareAnything.API/api/")
+
+
+            };
 
             button.Click += (o, e) =>
             {
-                button.Text = $"{count++} clicks";
+                try
+                {
+                    var result = client.GetStringAsync(@"sharepost/GetPostTransport?latitude=-34.810755792578&longitude=138.681245423409").Result;
+                    button.Text = $"{count++} clicks";
+                }
+                catch (Exception ex)
+                {
+                    button.Text = ex.InnerException.Message;
+                }
             };
         }
+
     }
 }
 

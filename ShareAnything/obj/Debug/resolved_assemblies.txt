@@ -1,10 +1,13 @@
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\ShareAnything.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Microsoft.AspNet.SignalR.Client.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\ModernHttpClient.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Mono.Android.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\mscorlib.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Newtonsoft.Json.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\OkHttp.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Core.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.Http.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.Http.Extensions.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.Http.Primitives.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.dll
@@ -58,7 +61,6 @@ C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Threading.Ti
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
-C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.Http.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.ServiceModel.Internals.dll

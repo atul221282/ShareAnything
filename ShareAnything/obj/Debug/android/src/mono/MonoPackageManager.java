@@ -81,7 +81,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"ShareAnything.dll",
 		"Microsoft.AspNet.SignalR.Client.dll",
+		"ModernHttpClient.dll",
 		"Newtonsoft.Json.dll",
+		"OkHttp.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"System.Collections.Concurrent.dll",

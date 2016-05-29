@@ -2,4 +2,5 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">ShareAnything</string>
+  <string name="library_name">ShareAnything</string>
 </resources>
