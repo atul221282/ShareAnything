@@ -5,6 +5,7 @@ C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Mono.Android.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\mscorlib.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\Newtonsoft.Json.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\OkHttp.dll
+C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\ShareAnything.SharedPortable.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Core.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.dll
 C:\Projects\ShareAnything\ShareAnything\obj\Debug\assemblies\System.Net.Http.dll

@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 
+
 namespace ShareAnything
 {
     [Activity(Label = "ShareAnything", MainLauncher = true, Icon = "@drawable/icon")]
@@ -31,8 +32,6 @@ namespace ShareAnything
             {
                 Timeout = TimeSpan.FromSeconds(15),
                 BaseAddress = new Uri("http://192.168.0.8/ShareAnything.API/api/")
-
-
             };
 
             button.Click += (o, e) =>

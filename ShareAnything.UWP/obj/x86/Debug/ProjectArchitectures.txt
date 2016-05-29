@@ -1,1 +1,0 @@
-C:\Projects\ShareAnything\ShareAnything.UWP\ShareAnything.UWP.csproj;x86

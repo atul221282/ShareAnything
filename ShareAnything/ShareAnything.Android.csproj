@@ -104,6 +104,17 @@
       <Version>2.1.2.2</Version>
     </XamarinComponentReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShareAnything.SharedPortable\ShareAnything.SharedPortable.csproj">
+      <Project>{6b5a5080-3ecc-4ef8-a86c-30fbd1094767}</Project>
+      <Name>ShareAnything.SharedPortable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Users\AtulChaudhary\Source\Workspaces\mylocalspecials\ShareAnything\ShareAnything.AplpicationServices\bin\Debug\ShareAnything.AplpicationServices.dll">
+      <Link>Libs\ShareAnything.AplpicationServices.dll</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

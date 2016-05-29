@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareAnything.Android", "ShareAnything\ShareAnything.Android.csproj", "{5B82E44E-CE13-4221-AABA-8F5F781BBCF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareAnything.SharedPortable", "ShareAnything.SharedPortable\ShareAnything.SharedPortable.csproj", "{6B5A5080-3ECC-4EF8-A86C-30FBD1094767}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{5B82E44E-CE13-4221-AABA-8F5F781BBCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B82E44E-CE13-4221-AABA-8F5F781BBCF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B82E44E-CE13-4221-AABA-8F5F781BBCF9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6B5A5080-3ECC-4EF8-A86C-30FBD1094767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5A5080-3ECC-4EF8-A86C-30FBD1094767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5A5080-3ECC-4EF8-A86C-30FBD1094767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5A5080-3ECC-4EF8-A86C-30FBD1094767}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

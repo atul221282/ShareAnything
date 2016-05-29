@@ -84,6 +84,7 @@ class MonoPackageManager_Resources {
 		"ModernHttpClient.dll",
 		"Newtonsoft.Json.dll",
 		"OkHttp.dll",
+		"ShareAnything.SharedPortable.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"System.Collections.Concurrent.dll",
