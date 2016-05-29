@@ -52,8 +52,9 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\Components\signalr-2.1.2.2\lib\android\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="OkHttp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\modernhttpclient.2.4.2\lib\MonoAndroid\OkHttp.dll</HintPath>
@@ -105,15 +106,10 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShareAnything.SharedPortable\ShareAnything.SharedPortable.csproj">
-      <Project>{6b5a5080-3ecc-4ef8-a86c-30fbd1094767}</Project>
-      <Name>ShareAnything.SharedPortable</Name>
+    <ProjectReference Include="..\ShareAnything.Shared\ShareAnything.Shared.csproj">
+      <Project>{e5500151-324f-4762-bf78-27ee977cdc03}</Project>
+      <Name>ShareAnything.Shared</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\..\Users\AtulChaudhary\Source\Workspaces\mylocalspecials\ShareAnything\ShareAnything.AplpicationServices\bin\Debug\ShareAnything.AplpicationServices.dll">
-      <Link>Libs\ShareAnything.AplpicationServices.dll</Link>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

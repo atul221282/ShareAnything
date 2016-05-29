@@ -8,7 +8,7 @@ using Android.OS;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
-
+using Newtonsoft.Json.Linq;
 
 namespace ShareAnything
 {
@@ -30,15 +30,20 @@ namespace ShareAnything
 
             var client = new HttpClient
             {
-                Timeout = TimeSpan.FromSeconds(15),
-                BaseAddress = new Uri("http://192.168.0.8/ShareAnything.API/api/")
+                Timeout = TimeSpan.FromSeconds(8),
+                //BaseAddress = new Uri("http://192.168.0.8/ShareAnything.API/api/")
+                BaseAddress = new Uri("http://172.17.69.125/ShareAnything.API/api/")
             };
 
             button.Click += (o, e) =>
             {
                 try
                 {
-                    var result = client.GetStringAsync(@"sharepost/GetPostTransport?latitude=-34.810755792578&longitude=138.681245423409").Result;
+
+                    var response = client
+                    .GetAsync(@"sharepost/GetPostTransport?latitude=-34.810755792578&longitude=138.681245423409")
+                    .Result;
+                    var jObject = JObject.Parse(response.Content.ReadAsStringAsync().Result);
                     button.Text = $"{count++} clicks";
                 }
                 catch (Exception ex)
