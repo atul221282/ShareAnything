@@ -31,5 +31,6 @@ C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\bin\Debug\
 C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
 C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\obj\Debug\ShareAnything.Form.Droid.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\obj\Debug\ShareAnything.Form.Droid.dll.mdb
 C:\Projects\ShareAnything\ShareAnything.Form\ShareAnything.Form.Droid\bin\Debug\ShareAnything.Form.Droid.dll.mdb
