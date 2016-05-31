@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SharePost.Views.MainPage">
-
-  <StackLayout>
-    <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" 
-             x:Name="boxViewColor"></BoxView>
-  </StackLayout>
-
+  <ScrollView>
+    <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+      <Entry x:Name="enEmail" Placeholder="Email"></Entry>
+      <Entry x:Name="enPassword" IsPassword="True" Placeholder="Password"></Entry>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

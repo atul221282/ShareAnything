@@ -17,12 +17,16 @@ namespace SharePost.Views {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.BoxView boxViewColor;
+        private global::Xamarin.Forms.Entry enEmail;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry enPassword;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
-            boxViewColor = this.FindByName<global::Xamarin.Forms.BoxView>("boxViewColor");
+            enEmail = this.FindByName<global::Xamarin.Forms.Entry>("enEmail");
+            enPassword = this.FindByName<global::Xamarin.Forms.Entry>("enPassword");
         }
     }
 }

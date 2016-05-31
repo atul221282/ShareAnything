@@ -13,7 +13,7 @@ namespace SharePost.Views
         public MainPage()
         {
             InitializeComponent();
-            boxViewColor.Color = Device.OnPlatform(Color.Blue, Color.Green, Color.Red);
+            enEmail.Focus();
         }
     }
 }

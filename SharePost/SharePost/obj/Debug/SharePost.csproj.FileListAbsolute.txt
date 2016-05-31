@@ -1,4 +1,3 @@
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.MainPage.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Core.dll
@@ -9,9 +8,7 @@ C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Core.xml
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.MainPage.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.pdb
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
-C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
-C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
