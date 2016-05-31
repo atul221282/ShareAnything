@@ -6,6 +6,7 @@
     <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
       <Entry x:Name="enEmail" Placeholder="Email"></Entry>
       <Entry x:Name="enPassword" IsPassword="True" Placeholder="Password"></Entry>
+      <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin"></Button>
     </StackLayout>
   </ScrollView>
 </ContentPage>

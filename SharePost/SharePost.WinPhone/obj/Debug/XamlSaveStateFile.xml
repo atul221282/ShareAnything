@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\projects\shareanything\sharepost\sharepost.winphone\obj\debug\intermediatexaml\sharepost.winphone.exe" HashGuid="1aa17e08-1d55-1106-1337-76ae64224221" />
-    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="58f234c6-4a77-3436-42c3-c7be575ea936" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="98bff015-45f0-ad7f-81b9-31a69a9c81af" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.core.dll" HashGuid="2a418b72-55c1-19a8-a363-4b8c348fbee0" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.dll" HashGuid="bb4040f4-26bb-5883-795e-627e39855666" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="068a3578-03d9-2580-f12e-c531e1d2d71c" />

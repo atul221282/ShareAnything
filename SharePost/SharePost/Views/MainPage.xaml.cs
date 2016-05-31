@@ -15,5 +15,15 @@ namespace SharePost.Views
             InitializeComponent();
             enEmail.Focus();
         }
+
+        /// <summary>
+        /// Called when [clicked_btn login].
+        /// </summary>
+        /// <param name="sedner">The sedner.</param>
+        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
+        protected void OnClicked_btnLogin(object sedner, EventArgs events)
+        {
+            //make http call
+        }
     }
 }
