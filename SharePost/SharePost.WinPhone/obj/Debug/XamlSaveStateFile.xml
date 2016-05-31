@@ -1,0 +1,11 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\projects\shareanything\sharepost\sharepost.winphone\obj\debug\intermediatexaml\sharepost.winphone.exe" HashGuid="f4328546-e01c-3434-000b-d912b227a504" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="96d59d5e-9b9c-e318-2f04-8ec6d4eaf691" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.core.dll" HashGuid="2a418b72-55c1-19a8-a363-4b8c348fbee0" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.dll" HashGuid="bb4040f4-26bb-5883-795e-627e39855666" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="068a3578-03d9-2580-f12e-c531e1d2d71c" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="52b59dd3-49ca-beb7-ea1e-5100cbca4812" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="39a2c026-b4e0-6e41-04bc-58950ef1ecfd" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

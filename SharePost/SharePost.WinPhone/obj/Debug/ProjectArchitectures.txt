@@ -1,0 +1,2 @@
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\SharePost.WinPhone.csproj;neutral
+C:\Projects\ShareAnything\SharePost\SharePost\SharePost.csproj;neutral
