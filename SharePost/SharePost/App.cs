@@ -1,4 +1,5 @@
-﻿using SharePost.Views;
+﻿using SharePost.Base;
+using SharePost.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using Xamarin.Forms;
 
 namespace SharePost
 {
-    public class App : Application
+    public class App : BaseApplication
     {
         public App()
         {

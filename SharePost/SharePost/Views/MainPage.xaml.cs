@@ -21,9 +21,12 @@ namespace SharePost.Views
         /// </summary>
         /// <param name="sedner">The sedner.</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        protected void OnClicked_btnLogin(object sedner, EventArgs events)
+        async protected void OnClicked_btnLogin(object sedner, EventArgs events)
         {
             //make http call
+            await DisplayAlert("Clicked",
+                string.Format("Email Address is : {0} and Password is :{1}", enEmail.Text, enPassword.Text),
+                "OK");
         }
     }
 }
