@@ -26,11 +26,15 @@ namespace SharePost.Views {
         private global::Xamarin.Forms.Button btnLogin;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnRegister;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             enEmail = this.FindByName<global::Xamarin.Forms.Entry>("enEmail");
             enPassword = this.FindByName<global::Xamarin.Forms.Entry>("enPassword");
             btnLogin = this.FindByName<global::Xamarin.Forms.Button>("btnLogin");
+            btnRegister = this.FindByName<global::Xamarin.Forms.Button>("btnRegister");
         }
     }
 }

@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SharePost.Views.MainPage">
   <ScrollView>
-    <StackLayout Orientation="Vertical" Padding="20" Spacing="10">
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                 HorizontalOptions="FillAndExpand" Padding="20" Spacing="10">
       <Entry x:Name="enEmail" Placeholder="Email"></Entry>
       <Entry x:Name="enPassword" IsPassword="True" Placeholder="Password"></Entry>
       <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin"></Button>
+      <Button Text="Register" Clicked="OnClicked_btnRegister" x:Name="btnRegister"></Button>
     </StackLayout>
   </ScrollView>
+
 </ContentPage>
