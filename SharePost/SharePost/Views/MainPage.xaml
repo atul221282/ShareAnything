@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SharePost.Views.MainPage">
 
-  <ScrollView x:Name="scrollView" VerticalOptions="CenterAndExpand">
+  <ScrollView x:Name="scrollView">
     <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand"
                  AbsoluteLayout.LayoutBounds="0,0,0.5,0.5" Padding="20" Spacing="10">
       <Entry x:Name="enEmail" Placeholder="Email"></Entry>
