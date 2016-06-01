@@ -17,6 +17,9 @@ namespace SharePost.Views {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ScrollView scrollView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry enEmail;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -31,6 +34,7 @@ namespace SharePost.Views {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
+            scrollView = this.FindByName<global::Xamarin.Forms.ScrollView>("scrollView");
             enEmail = this.FindByName<global::Xamarin.Forms.Entry>("enEmail");
             enPassword = this.FindByName<global::Xamarin.Forms.Entry>("enPassword");
             btnLogin = this.FindByName<global::Xamarin.Forms.Button>("btnLogin");

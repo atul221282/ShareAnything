@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharePost.Views.Account;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,10 +37,10 @@ namespace SharePost.Views
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void OnClicked_btnRegister(object sedner, EventArgs events)
         {
-            //make http call
-            await DisplayAlert("Clicked",
-                "Navigate user to register screen",
-                "OK");
+            await Navigation.PushAsync(new Register(), true);
         }
+
+        
+
     }
 }
