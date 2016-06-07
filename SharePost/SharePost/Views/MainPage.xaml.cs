@@ -16,8 +16,6 @@ namespace SharePost.Views
         public MainPage()
         {
             InitializeComponent();
-            SetPage();
-
         }
         /// <summary>
         /// Application developers can override this method to provide behavior when the back button is pressed.
@@ -39,16 +37,13 @@ namespace SharePost.Views
         }
 
         /// <summary>
-        /// Sets the page.
+        /// Called when [clicked_btn posts].
         /// </summary>
-        async public void SetPage()
+        /// <param name="sender">The sender.</param>
+        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
+        async protected void OnClicked_btnPosts(object sender, EventArgs events)
         {
-            var stack = Navigation.NavigationStack;
-        }
-
-        async protected void OnAppearing_cpMain(object sender, EventArgs events)
-        {
-
+            await Navigation.PushAsync(new List(), true);
         }
 
     }

@@ -19,7 +19,7 @@ namespace SharePost
             //if (Device.Idiom == TargetIdiom.Phone)
             //{
             //    // The root page of your application
-            MainPage = new NavigationPage(new  Login());
+            MainPage = new  Login();
                 //new NavigationPage(RenderViewFactory.GetPage<ContentPage>());
             //}
             //else

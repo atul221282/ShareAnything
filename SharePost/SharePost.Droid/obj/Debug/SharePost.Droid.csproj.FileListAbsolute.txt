@@ -37,6 +37,5 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\res\drawable-xhdpi
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\R.cs.flag
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\uploadflags.txt
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\SharePost.Droid.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.dll.mdb

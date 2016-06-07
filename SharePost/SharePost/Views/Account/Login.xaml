@@ -10,7 +10,7 @@
       <Entry x:Name="enPassword" IsPassword="True" Placeholder="Password"></Entry>
       <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin"></Button>
       <Button Text="Register" Clicked="OnClicked_btnRegister" x:Name="btnRegister"></Button>
-      <Button Text="Posts" Clicked="OnClicked_btnPosts" x:Name="btnPosts"></Button>
+   
     </StackLayout>
   </ScrollView>
 

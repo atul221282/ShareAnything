@@ -26,14 +26,13 @@ namespace SharePost.Views.Account
         /// <exception cref="System.NotImplementedException"></exception>
         async private void NavigateUser(Login login)
         {
-            if (Device.OS == TargetPlatform.Android)
-                Application.Current.MainPage = new NavigationPage(new MainPage());
-            else
-            {
-                await Navigation.PushAsync(new NavigationPage(new MainPage()));
-                Navigation.RemovePage(this);
-            }
-            //
+            //if (Device.OS == TargetPlatform.Android)
+            App.Current.MainPage = new NavigationPage(new MainPage());
+            //else
+            //{
+            //    await Navigation.PushAsync(new NavigationPage(new MainPage()));
+            //    Navigation.RemovePage(this);
+            //}
         }
 
         /// <summary>
@@ -66,15 +65,7 @@ namespace SharePost.Views.Account
             await Navigation.PushAsync(new Register(), true);
         }
 
-        /// <summary>
-        /// Called when [clicked_btn posts].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void OnClicked_btnPosts(object sender, EventArgs events)
-        {
-            await Navigation.PushAsync(new List(), true);
-        }
+
 
         protected override void OnAppearing()
         {
