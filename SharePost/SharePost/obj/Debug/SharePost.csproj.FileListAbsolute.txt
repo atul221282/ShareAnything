@@ -17,5 +17,3 @@ C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csproj.Generat
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.Post.List.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.Account.Login.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
-C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
