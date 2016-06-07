@@ -45,3 +45,14 @@ C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\MultipleQualifi
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.Phone.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\en\SharePost.Properties.Resources.resw
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\layout.resfiles
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\layout.resfiles.intermediate
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\Resources.resfiles
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\Resources.resfiles.intermediate
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\pri.resfiles
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\pri.resfiles.intermediate
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\priconfig.xml
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\priconfig.xml.intermediate
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost.pri
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\SharePost\qualifiers.txt

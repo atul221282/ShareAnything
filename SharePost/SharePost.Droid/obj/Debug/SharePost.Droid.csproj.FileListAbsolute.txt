@@ -1,11 +1,3 @@
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Core.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.apk
@@ -13,7 +5,15 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid-Si
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\FormsViewGroup.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Platform.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.pdb

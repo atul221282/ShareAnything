@@ -11,5 +11,13 @@ C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.MainPage.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.pdb
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.Account.Register.xaml.g.cs
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Properties.Resources.resources
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csproj.GenerateResource.Cache
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.Post.List.xaml.g.cs
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.Views.Account.Login.xaml.g.cs
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb

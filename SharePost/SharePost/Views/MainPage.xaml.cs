@@ -1,4 +1,5 @@
 ﻿using SharePost.Views.Account;
+using SharePost.Views.Post;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,38 +10,46 @@ using Xamarin.Forms;
 
 namespace SharePost.Views
 {
+
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            enEmail.Focus();
+            SetPage();
+
+        }
+        /// <summary>
+        /// Application developers can override this method to provide behavior when the back button is pressed.
+        /// Use it when user closing application but check form to make sure that form is dirty 
+        /// </summary>
+        /// <returns>
+        /// To be added.
+        /// </returns>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
+        protected override bool OnBackButtonPressed()
+        {
+            if (Device.OS == TargetPlatform.Android)
+            {
+                return !(Navigation.NavigationStack.Count > 1);
+            }
+            return base.OnBackButtonPressed();
         }
 
         /// <summary>
-        /// Called when [clicked_btn login].
+        /// Sets the page.
         /// </summary>
-        /// <param name="sedner">The sedner.</param>
-        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void OnClicked_btnLogin(object sedner, EventArgs events)
+        async public void SetPage()
         {
-            //make http call
-            await DisplayAlert("Clicked",
-                string.Format("Email Address is : {0} and Password is :{1}", enEmail.Text, enPassword.Text),
-                "OK");
+            var stack = Navigation.NavigationStack;
         }
 
-        /// <summary>
-        /// Called when [clicked_btn register].
-        /// </summary>
-        /// <param name="sedner">The sedner.</param>
-        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void OnClicked_btnRegister(object sedner, EventArgs events)
+        async protected void OnAppearing_cpMain(object sender, EventArgs events)
         {
-            await Navigation.PushAsync(new Register(), true);
-        }
 
-        
+        }
 
     }
 }

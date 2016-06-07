@@ -1,5 +1,7 @@
 ﻿using SharePost.Base;
+using SharePost.Factory;
 using SharePost.Views;
+using SharePost.Views.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +11,22 @@ using Xamarin.Forms;
 
 namespace SharePost
 {
-    public class App : BaseApplication
+    public class App : Application
     {
         public App()
         {
-            // The root page of your application
-            MainPage = new NavigationPage(new MainPage());
+            ////if user is logged in then redirect to post screen
+            //if (Device.Idiom == TargetIdiom.Phone)
+            //{
+            //    // The root page of your application
+            MainPage = new NavigationPage(new  Login());
+                //new NavigationPage(RenderViewFactory.GetPage<ContentPage>());
+            //}
+            //else
+            //{
+            //    MainPage = new NavigationPage(new MainPage());
+            //}
+
         }
 
         protected override void OnStart()
