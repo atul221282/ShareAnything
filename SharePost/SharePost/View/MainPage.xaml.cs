@@ -1,5 +1,6 @@
 ﻿using SharePost.View.Account;
 using SharePost.View.Post;
+using SharePost.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,11 @@ namespace SharePost.View
 
     public partial class MainPage : ContentPage
     {
+        MainPageViewModel vm;
         public MainPage()
         {
+            vm = new MainPageViewModel();
+            BindingContext = vm;
             InitializeComponent();
         }
         /// <summary>
@@ -46,5 +50,11 @@ namespace SharePost.View
             await Navigation.PushAsync(new PostList(), true);
         }
 
+        /// <summary>
+        /// Handles the OnItemTapped event of the postList control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
+        async protected void postList_OnItemTapped(object sender, EventArgs events) { }
     }
 }

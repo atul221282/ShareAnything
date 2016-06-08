@@ -8,23 +8,20 @@ using System.Threading.Tasks;
 
 namespace SharePost.ViewModel
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="SharePost.ViewModel.BaseViewModel" />
     public class MainPageViewModel : BaseViewModel, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
         private List<Post> _posts;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainPageViewModel"/> class.
-        /// </summary>
+
         public MainPageViewModel()
         {
-            CreatePosts(this.Posts);
+            this.Posts = new List<Post>();
+            var posts = CreatePopsts();
+            this.Posts = posts;
         }
 
-       
 
         public List<Post> Posts
         {
@@ -32,22 +29,21 @@ namespace SharePost.ViewModel
             set
             {
                 _posts = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this,
-                        new PropertyChangedEventArgs("Posts"));
-                }
+                if (_posts != null)
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Posts"));
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        private void CreatePosts(List<Post> posts)
+        private static List<Post> CreatePopsts()
         {
-            if (posts == null)
-                posts = new List<Post>();
-
-            posts.Add(new Post { Title = "Atul" });
+            var posts = new List<Post>();
+            for (int i = 0; i < 100; i++)
+            {
+                posts.Add(new Post { Name = Guid.NewGuid().ToString() });
+            }
+            return posts;
         }
+
     }
 }

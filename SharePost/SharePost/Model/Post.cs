@@ -8,12 +8,6 @@ namespace SharePost.Model
 {
     public class Post
     {
-        /// <summary>
-        /// Gets or sets the title.
-        /// </summary>
-        /// <value>
-        /// The title.
-        /// </value>
-        public string Title { get; set; }
+        public string Name { get; set; }
     }
 }
