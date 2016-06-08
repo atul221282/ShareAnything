@@ -62,5 +62,7 @@ namespace SharePost.View.Account
         {
             NavigateUser(this);
         }
+
+        
     }
 }
