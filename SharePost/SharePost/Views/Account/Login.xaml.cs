@@ -15,8 +15,6 @@ namespace SharePost.Views.Account
         public Login()
         {
             InitializeComponent();
-
-            //NavigateUser(this);
         }
 
         /// <summary>
@@ -24,15 +22,9 @@ namespace SharePost.Views.Account
         /// </summary>
         /// <param name="login">The login.</param>
         /// <exception cref="System.NotImplementedException"></exception>
-        async private void NavigateUser(Login login)
+        private void NavigateUser(Login login)
         {
-            //if (Device.OS == TargetPlatform.Android)
             App.Current.MainPage = new NavigationPage(new MainPage());
-            //else
-            //{
-            //    await Navigation.PushAsync(new NavigationPage(new MainPage()));
-            //    Navigation.RemovePage(this);
-            //}
         }
 
         /// <summary>
@@ -46,27 +38,26 @@ namespace SharePost.Views.Account
             await DisplayAlert("Clicked",
                 string.Format("Email Address is : {0} and Password is :{1}", enEmail.Text, enPassword.Text),
                 "OK");
-
             //Device.OnPlatform(iOS: IosAction, Android: AndroidAction, WinPhone: WindoeAction);
             //Device.OnPlatform(iOS: () => { });
-
-
         }
 
         /// <summary>
-        ///
-        /// <summary>
         /// Called when [clicked_btn register].
         /// </summary>
-        /// <param name="sender">The sedner.</param>
+        /// <param name="sender">The sender.</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void OnClicked_btnRegister(object sender, EventArgs events)
         {
             await Navigation.PushAsync(new Register(), true);
         }
 
-
-
+        /// <summary>
+        /// When overridden, allows application developers to customize behavior immediately prior to the <see cref="T:Xamarin.Forms.Page" /> becoming visible.
+        /// </summary>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
         protected override void OnAppearing()
         {
             NavigateUser(this);

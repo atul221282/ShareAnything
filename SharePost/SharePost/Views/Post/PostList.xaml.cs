@@ -8,11 +8,12 @@ using Xamarin.Forms;
 
 namespace SharePost.Views.Post
 {
-    public partial class List : ContentPage
+    public partial class PostList : ContentPage
     {
-        public List()
+        public PostList()
         {
             InitializeComponent();
         }
+
     }
 }

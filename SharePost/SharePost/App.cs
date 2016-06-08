@@ -11,22 +11,11 @@ using Xamarin.Forms;
 
 namespace SharePost
 {
-    public class App : Application
+    public class App : BaseApplication
     {
         public App()
         {
-            ////if user is logged in then redirect to post screen
-            //if (Device.Idiom == TargetIdiom.Phone)
-            //{
-            //    // The root page of your application
-            MainPage = new  Login();
-                //new NavigationPage(RenderViewFactory.GetPage<ContentPage>());
-            //}
-            //else
-            //{
-            //    MainPage = new NavigationPage(new MainPage());
-            //}
-
+            MainPage = new Login();
         }
 
         protected override void OnStart()

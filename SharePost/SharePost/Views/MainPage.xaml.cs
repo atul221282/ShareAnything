@@ -43,7 +43,7 @@ namespace SharePost.Views
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void OnClicked_btnPosts(object sender, EventArgs events)
         {
-            await Navigation.PushAsync(new List(), true);
+            await Navigation.PushAsync(new PostList(), true);
         }
 
     }

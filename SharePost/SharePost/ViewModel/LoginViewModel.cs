@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharePost.ViewModel
 {
-    class LoginViewModel
+    public class LoginViewModel
     {
     }
 }
