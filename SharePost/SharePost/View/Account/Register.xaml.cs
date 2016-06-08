@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace SharePost.Views.Account
+namespace SharePost.View.Account
 {
     public partial class Register : ContentPage
     {

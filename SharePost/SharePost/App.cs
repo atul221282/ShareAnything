@@ -1,7 +1,7 @@
 ﻿using SharePost.Base;
 using SharePost.Factory;
-using SharePost.Views;
-using SharePost.Views.Account;
+using SharePost.View;
+using SharePost.View.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;

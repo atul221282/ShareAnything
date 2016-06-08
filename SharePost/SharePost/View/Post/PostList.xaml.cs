@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace SharePost.Views.Post
+namespace SharePost.View.Post
 {
     public partial class PostList : ContentPage
     {
@@ -14,6 +14,5 @@ namespace SharePost.Views.Post
         {
             InitializeComponent();
         }
-
     }
 }

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SharePost.Views.Account {
+namespace SharePost.View.Post {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Register : global::Xamarin.Forms.ContentPage {
+    public partial class PostList : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Register));
+            this.LoadFromXaml(typeof(PostList));
         }
     }
 }

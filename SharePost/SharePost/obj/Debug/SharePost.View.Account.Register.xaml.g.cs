@@ -8,21 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SharePost.Views {
+namespace SharePost.View.Account {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     
     
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button btnPosts;
+    public partial class Register : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(MainPage));
-            btnPosts = this.FindByName<global::Xamarin.Forms.Button>("btnPosts");
+            this.LoadFromXaml(typeof(Register));
         }
     }
 }

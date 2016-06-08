@@ -44,17 +44,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\LoginViewModel.cs" />
-    <Compile Include="Views\Account\Login.xaml.cs">
+    <Compile Include="View\Account\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Account\Register.xaml.cs">
+    <Compile Include="View\Account\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Post\PostList.xaml.cs">
+    <Compile Include="View\Post\PostList.xaml.cs">
       <DependentUpon>PostList.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -81,25 +80,29 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainPage.xaml">
+    <EmbeddedResource Include="View\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Account\Register.xaml">
+    <EmbeddedResource Include="View\Account\Register.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Post\PostList.xaml">
+    <EmbeddedResource Include="View\Account\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Account\Login.xaml">
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Post\PostList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,5 +1,5 @@
-﻿using SharePost.Views.Account;
-using SharePost.Views.Post;
+﻿using SharePost.View.Account;
+using SharePost.View.Post;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace SharePost.Views
+namespace SharePost.View
 {
 
     public partial class MainPage : ContentPage

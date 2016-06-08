@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SharePost.Views.Account {
+namespace SharePost.View.Account {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;

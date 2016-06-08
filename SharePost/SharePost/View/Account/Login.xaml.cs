@@ -1,4 +1,4 @@
-﻿using SharePost.Views.Post;
+﻿using SharePost.View.Post;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace SharePost.Views.Account
+namespace SharePost.View.Account
 {
     public partial class Login
     {
