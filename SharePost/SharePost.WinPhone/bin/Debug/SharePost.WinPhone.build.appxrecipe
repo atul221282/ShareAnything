@@ -39,6 +39,12 @@
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.2.0.45\lib\wpa81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

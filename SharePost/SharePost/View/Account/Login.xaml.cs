@@ -1,4 +1,5 @@
-﻿using SharePost.View.Post;
+﻿using SharePost.Helpers;
+using SharePost.View.Post;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace SharePost.View.Account
         public Login()
         {
             InitializeComponent();
+            
         }
 
         /// <summary>

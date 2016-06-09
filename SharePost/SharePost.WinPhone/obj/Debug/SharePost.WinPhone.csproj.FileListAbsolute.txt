@@ -56,3 +56,7 @@ C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\MultipleQualifi
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.Phone.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.Settings.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.Settings.dll
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.Settings.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.Settings.xml

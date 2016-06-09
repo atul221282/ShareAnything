@@ -1778,6 +1778,16 @@
           }
         }
       },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.45": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -3430,6 +3440,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.45": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5038,6 +5058,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.45": {
@@ -6700,6 +6730,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.45": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8308,6 +8348,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.45": {
@@ -9970,6 +10020,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.45": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -11578,6 +11638,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.45": {
@@ -14863,6 +14933,60 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "Xam.Plugins.Settings/2.1.0": {
+      "sha512": "quBuIfhmcYN6V1hZTV7a3ODiNqdT0Zv+U/zQdOSQnLQhVd+U+HojacD4TYm+CzUz9+FxUEDpH8aTXHDRyzdZTg==",
+      "type": "package",
+      "files": [
+        "Xam.Plugins.Settings.2.1.0.nupkg.sha512",
+        "Xam.Plugins.Settings.nuspec",
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/MonoTouch10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Helpers/Settings.cs.pp",
+        "content/win8/Helpers/Settings.cs.pp",
+        "content/wp8/Helpers/Settings.cs.pp",
+        "content/wpa81/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Settings.dll",
+        "lib/MonoTouch10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.xml",
+        "lib/win8/Plugin.Settings.Abstractions.dll",
+        "lib/win8/Plugin.Settings.Abstractions.xml",
+        "lib/win8/Plugin.Settings.dll",
+        "lib/win8/Plugin.Settings.xml",
+        "lib/wp8/Plugin.Settings.Abstractions.dll",
+        "lib/wp8/Plugin.Settings.Abstractions.xml",
+        "lib/wp8/Plugin.Settings.dll",
+        "lib/wp8/Plugin.Settings.xml",
+        "lib/wpa81/Plugin.Settings.Abstractions.dll",
+        "lib/wpa81/Plugin.Settings.Abstractions.xml",
+        "lib/wpa81/Plugin.Settings.dll",
+        "lib/wpa81/Plugin.Settings.xml",
+        "readme.txt"
+      ]
+    },
     "Xamarin.Forms/2.2.0.45": {
       "sha512": "OIdhBp3ilSRayDWNhES7qAdF8jPn/lg5IowrD2/wEVOwmjrJH4qN9FytcuAUQqgk0++PAO6zJEkqq3BGpNw7IQ==",
       "type": "package",
@@ -15062,6 +15186,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "Xam.Plugins.Settings >= 2.1.0",
       "Xamarin.Forms >= 2.2.0.45"
     ],
     "UAP,Version=v10.0": []

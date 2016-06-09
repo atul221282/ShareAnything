@@ -21,6 +21,12 @@
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
       <PackagePath>SharePost.Windows.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
     </AppxPackagedFile>

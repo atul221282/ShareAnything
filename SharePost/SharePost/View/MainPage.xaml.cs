@@ -55,6 +55,8 @@ namespace SharePost.View
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void postList_OnItemTapped(object sender, EventArgs events) { }
+        async protected void postList_OnItemTapped(object sender, EventArgs events)
+        {
+        }
     }
 }

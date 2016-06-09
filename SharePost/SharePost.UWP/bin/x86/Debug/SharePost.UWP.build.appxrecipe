@@ -345,6 +345,12 @@
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

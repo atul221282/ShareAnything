@@ -1,4 +1,5 @@
-﻿using SharePost.Model;
+﻿using SharePost.Helpers;
+using SharePost.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,9 +9,8 @@ using System.Threading.Tasks;
 
 namespace SharePost.ViewModel
 {
-    public class MainPageViewModel : BaseViewModel, INotifyPropertyChanged
+    public class MainPageViewModel : BaseViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
 
         private List<Post> _posts;
 
@@ -20,6 +20,22 @@ namespace SharePost.ViewModel
             this.Posts = new List<Post>();
             var posts = CreatePopsts();
             this.Posts = posts;
+            this.Name = "Atul";
+        }
+
+        public string Name
+        {
+            get
+            {
+                return Settings.GeneralSettings;
+            }
+            set
+            {
+                if (Settings.GeneralSettings == value)
+                    return;
+                Settings.GeneralSettings = value;
+                OnPropertyChanged();
+            }
         }
 
 
@@ -30,7 +46,7 @@ namespace SharePost.ViewModel
             {
                 _posts = value;
                 if (_posts != null)
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Posts"));
+                    OnPropertyChanged();
             }
         }
 
