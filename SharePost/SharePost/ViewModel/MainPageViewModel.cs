@@ -20,9 +20,14 @@ namespace SharePost.ViewModel
             this.Posts = new List<Post>();
             var posts = CreatePopsts();
             this.Posts = posts;
-            this.Name = "Atul";
-        }
+            if (string.IsNullOrEmpty(Settings.GeneralSettings))
+                this.Name = "Atul";
+            else
+            {
+                var sdsds = Name;
+            }
 
+        }
         public string Name
         {
             get

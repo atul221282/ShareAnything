@@ -1,5 +1,6 @@
 ﻿using SharePost.Helpers;
 using SharePost.View.Post;
+using SharePost.ViewModel.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,12 @@ namespace SharePost.View.Account
 {
     public partial class Login
     {
-
+        LoginViewModel vm;
         public Login()
         {
+            vm = new LoginViewModel();
             InitializeComponent();
-            
+            BindingContext = vm;
         }
 
         /// <summary>
@@ -51,7 +53,8 @@ namespace SharePost.View.Account
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void OnClicked_btnRegister(object sender, EventArgs events)
         {
-            await Navigation.PushAsync(new Register(), true);
+            var register = new NavigationPage(new Register());
+            await Navigation.PushModalAsync(register);
         }
 
         /// <summary>
@@ -62,9 +65,10 @@ namespace SharePost.View.Account
         /// </remarks>
         protected override void OnAppearing()
         {
-            NavigateUser(this);
+            if (!vm.IsUserLoggedIn)
+                NavigateUser(this);
         }
 
-        
+
     }
 }

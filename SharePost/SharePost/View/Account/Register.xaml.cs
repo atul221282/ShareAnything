@@ -10,13 +10,13 @@ namespace SharePost.View.Account
 {
     public partial class Register : ContentPage
     {
+        private bool isTablet = false;
         public Register()
         {
+            if (Device.Idiom != TargetIdiom.Phone)
+                isTablet = true;
             InitializeComponent();
-        }
-        protected override bool OnBackButtonPressed()
-        {
-            return Device.OnPlatform<bool>(false, false, false);
+            btnHome.IsVisible = isTablet;
         }
 
         /// <summary>
@@ -32,6 +32,16 @@ namespace SharePost.View.Account
             base.OnAppearing();
             //NavigationPage.SetHasNavigationBar(this, false);
             NavigationPage.SetHasNavigationBar(this, Device.OnPlatform<bool>(true, false, true));
+        }
+
+        /// <summary>
+        /// Handles the Clicked event of the btnHome control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
+        async protected void btnHome_Clicked(Object sender, EventArgs events)
+        {
+            App.Current.MainPage = new NavigationPage(new Login());
         }
     }
 }

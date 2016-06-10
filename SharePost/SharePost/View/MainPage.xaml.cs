@@ -21,6 +21,7 @@ namespace SharePost.View
             BindingContext = vm;
             InitializeComponent();
         }
+
         /// <summary>
         /// Application developers can override this method to provide behavior when the back button is pressed.
         /// Use it when user closing application but check form to make sure that form is dirty 
@@ -31,14 +32,14 @@ namespace SharePost.View
         /// <remarks>
         /// To be added.
         /// </remarks>
-        protected override bool OnBackButtonPressed()
-        {
-            if (Device.OS == TargetPlatform.Android)
-            {
-                return !(Navigation.NavigationStack.Count > 1);
-            }
-            return base.OnBackButtonPressed();
-        }
+        //protected override bool OnBackButtonPressed()
+        //{
+        //    if (Device.OS == TargetPlatform.Android)
+        //    {
+        //        return !(Navigation.NavigationStack.Count > 1);
+        //    }
+        //    return base.OnBackButtonPressed();
+        //}
 
         /// <summary>
         /// Called when [clicked_btn posts].
@@ -57,6 +58,7 @@ namespace SharePost.View
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void postList_OnItemTapped(object sender, EventArgs events)
         {
+            await Navigation.PushAsync(new Detail("asasas"), true);
         }
     }
 }

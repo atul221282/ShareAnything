@@ -1,5 +1,7 @@
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\SharePost.Droid.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.Settings.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
@@ -22,6 +24,7 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Sys
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
@@ -43,7 +46,4 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Sys
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.Settings.dll

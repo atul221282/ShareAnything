@@ -13,9 +13,12 @@ namespace SharePost.ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
 
 
-        #region INotifyPropertyChanged implementation
-
-
+        #region INotifyPropertyChanged implementation      
+          
+        /// <summary>
+        /// Called when [property changed].
+        /// </summary>
+        /// <param name="name">The name.</param>
         public void OnPropertyChanged([CallerMemberName]string name = "")
         {
             var changed = PropertyChanged;

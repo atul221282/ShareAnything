@@ -16,8 +16,13 @@ C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.View.Account.L
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.View.Post.PostList.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.pdb
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.Abstractions.dll
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.dll
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.xml
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\System.ComponentModel.Annotations.xml
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.View.Post.Detail.xaml.g.cs
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb

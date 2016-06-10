@@ -20,6 +20,13 @@ namespace SharePost
         public const string SettingsKey = "settings_key";
         public static readonly string SettingsDefault = string.Empty;
 
+        public const string skUserDetailsKey = "skUserDetailsKey";
+        public static readonly string skUserDetailsDefault = string.Empty;
+
+        public const string skRefreshToken = "skRefreshToken";
+        public static readonly string skRefreshTokenDefault = string.Empty;
+
+
         #endregion
     }
 }

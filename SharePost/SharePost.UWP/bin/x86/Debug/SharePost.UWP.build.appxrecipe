@@ -330,6 +330,12 @@
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugins.Settings\2.1.0\lib\UAP10\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugins.Settings\2.1.0\lib\UAP10\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -344,12 +350,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.Abstractions.dll">
-      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.Settings.dll">
-      <PackagePath>Plugin.Settings.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

@@ -50,5 +50,12 @@ C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\optimized\
 C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\SharePost.iOS.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\SharePostiOS.exe
 C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\SharePostiOS.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\Plugin.Settings.xml
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
 C:\Projects\ShareAnything\SharePost\SharePost.iOS\obj\iPhone\Debug\SharePostiOS.exe.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.iOS\bin\iPhone\Debug\SharePostiOS.exe.mdb

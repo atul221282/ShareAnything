@@ -203,5 +203,3 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\Xamarin.Forms.Pl
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.dll
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.xml
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.xml

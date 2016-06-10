@@ -17,8 +17,12 @@ namespace SharePost.View.Account {
     public partial class Register : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnHome;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Register));
+            btnHome = this.FindByName<global::Xamarin.Forms.Button>("btnHome");
         }
     }
 }

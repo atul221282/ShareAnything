@@ -19,6 +19,12 @@ namespace SharePost.Helpers
             }
         }
 
+        /// <summary>
+        /// Gets or sets the general settings.
+        /// </summary>
+        /// <value>
+        /// The general settings.
+        /// </value>
         public static string GeneralSettings
         {
             get
@@ -28,6 +34,45 @@ namespace SharePost.Helpers
             set
             {
                 AppSettings.AddOrUpdateValue<string>(SettingConstants.SettingsKey, value);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the user details.
+        /// Details like UserId and UserName(aka email),
+        /// Formatted Name and
+        /// User Image.
+        /// </summary>
+        /// <value>
+        /// The user details.
+        /// </value>
+        public static string UserDetails
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skUserDetailsKey,SettingConstants.skUserDetailsDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue<string>(SettingConstants.skUserDetailsDefault, value);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the refresk token.
+        /// </summary>
+        /// <value>
+        /// The refresk token.
+        /// </value>
+        public static string RefreskToken
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skRefreshToken, SettingConstants.skRefreshTokenDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue<string>(SettingConstants.skRefreshToken, value);
             }
         }
 
