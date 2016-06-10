@@ -38,7 +38,7 @@ namespace SharePost.ViewModel.Account
         {
             get
             {
-                return string.IsNullOrWhiteSpace(Settings.RefreskToken) && string.IsNullOrWhiteSpace(Settings.UserDetails);
+                return !string.IsNullOrWhiteSpace(Settings.RefreskToken) && !string.IsNullOrWhiteSpace(Settings.UserDetails);
             }
            
         }

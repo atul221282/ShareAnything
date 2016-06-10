@@ -24,5 +24,3 @@ C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\System.ComponentModel.An
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\System.ComponentModel.Annotations.xml
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.View.Post.Detail.xaml.g.cs
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
-C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
-C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb

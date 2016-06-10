@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharePost.ViewModel.Account;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +11,12 @@ namespace SharePost.View.Account
 {
     public partial class Register : ContentPage
     {
-        private bool isTablet = false;
+        RegisterViewModel vm;
         public Register()
         {
-            if (Device.Idiom != TargetIdiom.Phone)
-                isTablet = true;
+            vm = new RegisterViewModel();
             InitializeComponent();
-            btnHome.IsVisible = isTablet;
+            BindingContext = vm;
         }
 
         /// <summary>

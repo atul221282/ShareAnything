@@ -65,7 +65,7 @@ namespace SharePost.View.Account
         /// </remarks>
         protected override void OnAppearing()
         {
-            if (!vm.IsUserLoggedIn)
+            if (vm.IsUserLoggedIn)
                 NavigateUser(this);
         }
 
