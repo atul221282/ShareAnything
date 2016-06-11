@@ -52,11 +52,10 @@ namespace SharePost.View.Account
                 Debug.WriteLine("Position Longitude: {0}", position.Longitude);
                 using (HttpClient client = new HttpClient())
                 {
-                    var url =string.Format("http://192.168.0.7/ShareAnything.API/api/SharePost/GetPostTransport?longitude={0}&latitude={1}", 138.6802453, -34.81003);
+                    var url = "http://192.168.0.7/ShareAnything.API/api/Account/Login";
                     var result = await
-                        client
-                        .GetStringAsync(url);
-                    var pp = result.ToString();
+                        client.PostAsync(url, new StringContent("", Encoding.UTF8, "application/json"));
+                    var pp = await result.Content.ReadAsStringAsync();
                 }
             }
             catch (Exception ex)

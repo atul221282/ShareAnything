@@ -47,8 +47,5 @@ namespace SharePost.ViewModel.Account
         }
 
 
-
-
-
     }
 }
