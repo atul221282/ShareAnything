@@ -22,17 +22,25 @@
     <AppXManifest Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T09:37:16.060</Modified>
+      <Modified>2016-06-11T14:58:49.324</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
       <PackagePath>SharePost.Windows.exe</PackagePath>
-      <Modified>2016-06-11T09:37:11.922</Modified>
+      <Modified>2016-06-11T15:02:25.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2016-03-14T11:00:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.Abstractions.dll">
+      <PackagePath>Plugin.DeviceInfo.Abstractions.dll</PackagePath>
+      <Modified>2016-02-29T15:44:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.dll">
+      <PackagePath>Plugin.DeviceInfo.dll</PackagePath>
+      <Modified>2016-02-29T15:44:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.Abstractions.dll">
       <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
@@ -52,7 +60,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-11T09:37:04.742</Modified>
+      <Modified>2016-06-11T15:01:28.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
@@ -144,7 +152,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-11T09:37:15.101</Modified>
+      <Modified>2016-06-11T15:02:26.354</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

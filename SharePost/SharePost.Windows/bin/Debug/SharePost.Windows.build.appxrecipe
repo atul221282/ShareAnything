@@ -24,6 +24,12 @@
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.Abstractions.dll">
+      <PackagePath>Plugin.DeviceInfo.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.dll">
+      <PackagePath>Plugin.DeviceInfo.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.Abstractions.dll">
       <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
     </AppxPackagedFile>

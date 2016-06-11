@@ -99,5 +99,15 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Sys
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.Abstractions.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.DeviceInfo.Abstractions.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.DeviceInfo.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\SharePost.Droid.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.dll.mdb

@@ -4,6 +4,7 @@
     "Microsoft.Net.Http": "2.2.29",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "Newtonsoft.Json": "8.0.3",
+    "Xam.Plugin.DeviceInfo": "2.0.2",
     "Xam.Plugin.Geolocator": "3.0.4",
     "Xam.Plugins.Settings": "2.1.0",
     "Xamarin.Forms": "2.2.0.45"

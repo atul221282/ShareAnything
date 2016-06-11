@@ -102,6 +102,8 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",
+		"Plugin.DeviceInfo.Abstractions.dll",
+		"Plugin.DeviceInfo.dll",
 		"Plugin.Geolocator.Abstractions.dll",
 		"Plugin.Geolocator.dll",
 		"Plugin.Permissions.Abstractions.dll",
@@ -146,6 +148,7 @@ class MonoPackageManager_Resources {
 		"System.Diagnostics.Tools.dll",
 		"System.Runtime.Serialization.Primitives.dll",
 		"System.ComponentModel.Annotations.dll",
+		"System.Text.Encoding.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

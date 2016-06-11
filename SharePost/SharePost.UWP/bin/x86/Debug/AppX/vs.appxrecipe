@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f736c883-f105-4d30-a719-4bf328872f5e</PackageIdentityName>
     <IntermediateOutputPath>C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>49177DED83892A8766429D8116964B2D15CC1EBBEA2505551FC22D855A114616</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B408758D46F1CB119578DE0874413A8B7B4E4D983D043D8BF10E7BB5A005341F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f736c883-f105-4d30-a719-4bf328872f5e_1.0.0.0_x86__nh7s0b45jarrj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f736c883-f105-4d30-a719-4bf328872f5e_nh7s0b45jarrj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f736c883-f105-4d30-a719-4bf328872f5e</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T13:15:41.223</Modified>
+      <Modified>2016-06-11T15:01:31.562</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\SharePost.UWP.exe">
       <PackagePath>entrypoint\SharePost.UWP.exe</PackagePath>
-      <Modified>2016-06-11T13:15:40.563</Modified>
+      <Modified>2016-06-11T15:01:30.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -454,6 +454,14 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T13:41:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.DeviceInfo\2.0.2\lib\UAP10\Plugin.DeviceInfo.Abstractions.dll">
+      <PackagePath>Plugin.DeviceInfo.Abstractions.dll</PackagePath>
+      <Modified>2016-02-29T15:44:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.DeviceInfo\2.0.2\lib\UAP10\Plugin.DeviceInfo.dll">
+      <PackagePath>Plugin.DeviceInfo.dll</PackagePath>
+      <Modified>2016-02-29T15:44:42.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.Geolocator\3.0.4\lib\UAP10\Plugin.Geolocator.Abstractions.dll">
       <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
       <Modified>2016-01-31T19:10:30.000</Modified>
@@ -488,7 +496,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-11T13:15:38.558</Modified>
+      <Modified>2016-06-11T15:01:28.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -546,11 +554,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-11T09:37:20.238</Modified>
+      <Modified>2016-06-11T14:58:48.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\SharePost.UWP.exe">
       <PackagePath>SharePost.UWP.exe</PackagePath>
-      <Modified>2016-06-11T13:15:41.220</Modified>
+      <Modified>2016-06-11T15:01:31.549</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

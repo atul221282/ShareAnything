@@ -339,6 +339,12 @@
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.DeviceInfo\2.0.2\lib\UAP10\Plugin.DeviceInfo.Abstractions.dll">
+      <PackagePath>Plugin.DeviceInfo.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.DeviceInfo\2.0.2\lib\UAP10\Plugin.DeviceInfo.dll">
+      <PackagePath>Plugin.DeviceInfo.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugin.Geolocator\3.0.4\lib\UAP10\Plugin.Geolocator.Abstractions.dll">
       <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
     </AppxPackagedFile>

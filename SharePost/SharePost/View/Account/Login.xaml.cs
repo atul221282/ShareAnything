@@ -9,8 +9,9 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using SharePost.Extension;
 using Xamarin.Forms;
+using Plugin.DeviceInfo;
 
 namespace SharePost.View.Account
 {
@@ -20,6 +21,8 @@ namespace SharePost.View.Account
         public Login()
         {
             vm = new LoginViewModel();
+            vm.UserName = "atul221282@gmail.com";
+            vm.Password = "123456";
             InitializeComponent();
             BindingContext = vm;
         }
@@ -43,19 +46,21 @@ namespace SharePost.View.Account
         {
             try
             {
-                var locator = CrossGeolocator.Current;
-                locator.DesiredAccuracy = 50;
-                var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
+                var pp = CrossDeviceInfo.Current;
+                //var locator = CrossGeolocator.Current;
+                //locator.DesiredAccuracy = 50;
+                //var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
 
-                Debug.WriteLine("Position Status: {0}", position.Timestamp);
-                Debug.WriteLine("Position Latitude: {0}", position.Latitude);
-                Debug.WriteLine("Position Longitude: {0}", position.Longitude);
+                //Debug.WriteLine("Position Status: {0}", position.Timestamp);
+                //Debug.WriteLine("Position Latitude: {0}", position.Latitude);
+                //Debug.WriteLine("Position Longitude: {0}", position.Longitude);
                 using (HttpClient client = new HttpClient())
                 {
                     var url = "http://192.168.0.7/ShareAnything.API/api/Account/Login";
-                    var result = await
-                        client.PostAsync(url, new StringContent("", Encoding.UTF8, "application/json"));
-                    var pp = await result.Content.ReadAsStringAsync();
+                    var result = await client.PostStringAsync<object>(url,
+                        new { EmailAddress = vm.UserName, Password = vm.Password });
+                    if (result.IsSuccessStatusCode)
+                        NavigateUser(this);
                 }
             }
             catch (Exception ex)

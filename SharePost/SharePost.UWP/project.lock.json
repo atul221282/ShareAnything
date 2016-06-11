@@ -1812,6 +1812,16 @@
           }
         }
       },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugin.Geolocator/3.0.4": {
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -3518,6 +3528,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugin.Geolocator/3.0.4": {
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -5180,6 +5200,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
         }
       },
       "Xam.Plugin.Geolocator/3.0.4": {
@@ -6896,6 +6926,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugin.Geolocator/3.0.4": {
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -8558,6 +8598,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
         }
       },
       "Xam.Plugin.Geolocator/3.0.4": {
@@ -10274,6 +10324,16 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugin.Geolocator/3.0.4": {
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -11936,6 +11996,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.DeviceInfo/2.0.2": {
+        "compile": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll": {},
+          "lib/UAP10/Plugin.DeviceInfo.dll": {}
         }
       },
       "Xam.Plugin.Geolocator/3.0.4": {
@@ -15428,6 +15498,59 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "Xam.Plugin.DeviceInfo/2.0.2": {
+      "sha512": "BZC1mGEBLjZfvJ2VCrOCZI3zLWd3ZCCIRRWZo8fuYE1jztpSDcHbYLeWDN9PrYpflRTyhgDnS0aPoB/9D5+jfg==",
+      "type": "package",
+      "files": [
+        "Xam.Plugin.DeviceInfo.2.0.2.nupkg.sha512",
+        "Xam.Plugin.DeviceInfo.nuspec",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.dll",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.pdb",
+        "lib/MonoAndroid10/Plugin.DeviceInfo.xml",
+        "lib/MonoTouch10/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.DeviceInfo.dll",
+        "lib/MonoTouch10/Plugin.DeviceInfo.xml",
+        "lib/UAP10/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/UAP10/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/UAP10/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/UAP10/Plugin.DeviceInfo.dll",
+        "lib/UAP10/Plugin.DeviceInfo.pdb",
+        "lib/UAP10/Plugin.DeviceInfo.xml",
+        "lib/Xamarin.iOS10/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.DeviceInfo.dll",
+        "lib/Xamarin.iOS10/Plugin.DeviceInfo.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DeviceInfo.xml",
+        "lib/win8/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/win8/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/win8/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/win8/Plugin.DeviceInfo.dll",
+        "lib/win8/Plugin.DeviceInfo.pdb",
+        "lib/win8/Plugin.DeviceInfo.xml",
+        "lib/wp8/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/wp8/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/wp8/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/wp8/Plugin.DeviceInfo.dll",
+        "lib/wp8/Plugin.DeviceInfo.pdb",
+        "lib/wp8/Plugin.DeviceInfo.xml",
+        "lib/wpa81/Plugin.DeviceInfo.Abstractions.dll",
+        "lib/wpa81/Plugin.DeviceInfo.Abstractions.pdb",
+        "lib/wpa81/Plugin.DeviceInfo.Abstractions.xml",
+        "lib/wpa81/Plugin.DeviceInfo.dll",
+        "lib/wpa81/Plugin.DeviceInfo.pdb",
+        "lib/wpa81/Plugin.DeviceInfo.xml",
+        "readme.txt"
+      ]
+    },
     "Xam.Plugin.Geolocator/3.0.4": {
       "sha512": "mFAZEQxD+PfPoYu2MAWyzCz1TDgAh1mF/sOVxqUvuMSZuF4YffYooK3OlAODkGQj/aGjuQwwjQ9dI9BveMIhNw==",
       "type": "package",
@@ -15743,6 +15866,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 8.0.3",
+      "Xam.Plugin.DeviceInfo >= 2.0.2",
       "Xam.Plugin.Geolocator >= 3.0.4",
       "Xam.Plugins.Settings >= 2.1.0",
       "Xamarin.Forms >= 2.2.0.45"

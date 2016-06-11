@@ -210,3 +210,7 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.res
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.pdb
