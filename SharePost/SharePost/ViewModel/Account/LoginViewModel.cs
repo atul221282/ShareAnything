@@ -10,38 +10,44 @@ namespace SharePost.ViewModel.Account
 {
     public class LoginViewModel : BaseViewModel
     {
-        private User _user;
+        private string _userName;
+        private string _password;
 
         /// <summary>
-        /// Gets or sets the user.
+        /// Gets or sets the name of the user.
         /// </summary>
         /// <value>
-        /// The user.
+        /// The name of the user.
         /// </value>
-        public User User
+        public string UserName
         {
-            get { return _user; }
+            get { return _userName; }
             set
             {
-                _user = value;
+                _userName = value;
                 OnPropertyChanged();
             }
         }
 
+
         /// <summary>
-        /// Gets a value indicating whether this instance is user logged in.
+        /// Gets or sets the password.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is user logged in; otherwise, <c>false</c>.
+        /// The password.
         /// </value>
-        public bool IsUserLoggedIn
+        public string Password
         {
-            get
+            get { return _password; }
+            set
             {
-                return !string.IsNullOrWhiteSpace(Settings.RefreskToken) && !string.IsNullOrWhiteSpace(Settings.UserDetails);
+                _password = value;
+                OnPropertyChanged();
             }
-           
         }
+
+
+
 
 
     }

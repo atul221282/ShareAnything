@@ -12,12 +12,12 @@ namespace SharePost.ViewModel
     public class MainPageViewModel : BaseViewModel
     {
 
-        private List<Post> _posts;
+        private List<PostModel> _posts;
 
 
         public MainPageViewModel()
         {
-            this.Posts = new List<Post>();
+            this.Posts = new List<PostModel>();
             var posts = CreatePopsts();
             this.Posts = posts;
             if (string.IsNullOrEmpty(Settings.GeneralSettings))
@@ -44,7 +44,7 @@ namespace SharePost.ViewModel
         }
 
 
-        public List<Post> Posts
+        public List<PostModel> Posts
         {
             get { return _posts; }
             set
@@ -56,12 +56,12 @@ namespace SharePost.ViewModel
         }
 
 
-        private static List<Post> CreatePopsts()
+        private static List<PostModel> CreatePopsts()
         {
-            var posts = new List<Post>();
+            var posts = new List<PostModel>();
             for (int i = 0; i < 100; i++)
             {
-                posts.Add(new Post { Name = Guid.NewGuid().ToString() });
+                posts.Add(new PostModel { Name = Guid.NewGuid().ToString() });
             }
             return posts;
         }

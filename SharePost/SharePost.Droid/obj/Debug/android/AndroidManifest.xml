@@ -5,7 +5,9 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:label="SharePost.Droid" android:icon="@drawable/icon" android:debuggable="true">
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <application android:name="md556f12e63d47abc55027148604011c1f2.MainApplication" android:allowBackup="true" android:label="SharePost.Droid" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="SharePost" android:name="md556f12e63d47abc55027148604011c1f2.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

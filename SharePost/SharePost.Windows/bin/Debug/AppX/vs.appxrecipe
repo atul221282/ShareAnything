@@ -10,7 +10,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>85930d70-750c-41a6-9b95-03faaed4159c</PackageIdentityName>
     <IntermediateOutputPath>C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>133F1AA8F2471BBFAE2D0BE430DB7DFA83B3C2615056B47EB045DFF6DE2CB6E1</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A56DFB81AD3CE61ADCDD0419617BCA980088FF4FD02EC592CB941F9A069B676A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85930d70-750c-41a6-9b95-03faaed4159c_1.0.0.0_neutral__nh7s0b45jarrj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85930d70-750c-41a6-9b95-03faaed4159c_nh7s0b45jarrj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>85930d70-750c-41a6-9b95-03faaed4159c</RegisteredPackageID>
@@ -22,13 +22,25 @@
     <AppXManifest Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-10T14:08:40.179</Modified>
+      <Modified>2016-06-11T09:37:16.060</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
       <PackagePath>SharePost.Windows.exe</PackagePath>
-      <Modified>2016-06-10T15:32:44.477</Modified>
+      <Modified>2016-06-11T09:37:11.922</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-03-14T11:00:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.Abstractions.dll">
+      <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
+      <Modified>2016-01-31T19:10:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.dll">
+      <PackagePath>Plugin.Geolocator.dll</PackagePath>
+      <Modified>2016-01-31T19:10:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.Abstractions.dll">
       <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
@@ -40,7 +52,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-10T15:30:04.936</Modified>
+      <Modified>2016-06-11T09:37:04.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2016-06-01T11:13:03.240</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2016-06-01T11:13:03.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.2.0.45\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
@@ -88,11 +108,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-06-10T14:08:38.617</Modified>
+      <Modified>2016-06-11T09:37:11.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-10T14:08:38.622</Modified>
+      <Modified>2016-06-11T09:37:11.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.2.0.45\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
@@ -124,7 +144,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-10T15:32:44.874</Modified>
+      <Modified>2016-06-11T09:37:15.101</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

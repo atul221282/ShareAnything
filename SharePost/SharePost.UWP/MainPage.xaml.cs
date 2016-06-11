@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Plugin.Geolocator;
 
 namespace SharePost.UWP
 {
@@ -20,7 +21,6 @@ namespace SharePost.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
             LoadApplication(new SharePost.App());
         }
     }

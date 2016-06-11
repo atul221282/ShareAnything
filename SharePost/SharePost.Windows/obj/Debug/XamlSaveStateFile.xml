@@ -1,9 +1,14 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\projects\shareanything\sharepost\sharepost.windows\obj\debug\intermediatexaml\sharepost.windows.exe" HashGuid="2bfb2616-ab42-9c6c-4916-0620908cf6f1" />
+    <LocalAssembly PathName="c:\projects\shareanything\sharepost\sharepost.windows\obj\debug\intermediatexaml\sharepost.windows.exe" HashGuid="b92d00c9-000d-488e-5566-faba8a9e7bc1" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\newtonsoft.json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="74af0f9d-4f96-68dd-0977-2bb867adf196" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugin.geolocator.3.0.4\lib\win8\plugin.geolocator.abstractions.dll" HashGuid="20adc366-e6fc-8a10-1342-7d33d9231080" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugin.geolocator.3.0.4\lib\win8\plugin.geolocator.dll" HashGuid="388f1122-9d57-ce2f-c8c7-dae5f9a81113" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.abstractions.dll" HashGuid="2b0e2d63-0984-03e6-e1dc-77d16c51778c" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.dll" HashGuid="26f3d346-7a59-3cd8-0ef4-1467b0f8acfc" />
-    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="65b2205d-7fdf-2a2c-90ba-8b3fc18dc52f" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="2df912e3-5db2-d715-fd66-316bcda2466c" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.core.dll" HashGuid="2a418b72-55c1-19a8-a363-4b8c348fbee0" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.platform.dll" HashGuid="bb4040f4-26bb-5883-795e-627e39855666" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="068a3578-03d9-2580-f12e-c531e1d2d71c" />

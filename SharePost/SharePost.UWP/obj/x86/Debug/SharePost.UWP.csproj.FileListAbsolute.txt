@@ -9,6 +9,8 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\AppxManifes
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\SharePost.UWP.exe
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\SharePost.UWP.build.appxrecipe
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Microsoft.CSharp.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Net.Http.Primitives.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Core.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Net.dll
@@ -23,6 +25,7 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Microsoft.VisualBasic.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Private.DataContractSerialization.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.AppContext.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Collections.dll
@@ -111,6 +114,12 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.Reade
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Core.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Platform.UAP.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
@@ -201,5 +210,3 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.res
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Settings.dll

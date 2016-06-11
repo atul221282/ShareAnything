@@ -1,9 +1,12 @@
-﻿using SharePost.Helpers;
+﻿using Plugin.Geolocator;
+using SharePost.Helpers;
 using SharePost.View.Post;
 using SharePost.ViewModel.Account;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,10 +41,31 @@ namespace SharePost.View.Account
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void OnClicked_btnLogin(object sender, EventArgs events)
         {
-            //make http call
-            await DisplayAlert("Clicked",
-                string.Format("Email Address is : {0} and Password is :{1}", enEmail.Text, enPassword.Text),
-                "OK");
+            try
+            {
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+                var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
+
+                Debug.WriteLine("Position Status: {0}", position.Timestamp);
+                Debug.WriteLine("Position Latitude: {0}", position.Latitude);
+                Debug.WriteLine("Position Longitude: {0}", position.Longitude);
+                using (HttpClient client = new HttpClient())
+                {
+                    var url =string.Format("http://192.168.0.7/ShareAnything.API/api/SharePost/GetPostTransport?longitude={0}&latitude={1}", 138.6802453, -34.81003);
+                    var result = await
+                        client
+                        .GetStringAsync(url);
+                    var pp = result.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Unable to get location, may need to increase timeout: " + ex);
+            }
+
+
+
             //Device.OnPlatform(iOS: IosAction, Android: AndroidAction, WinPhone: WindoeAction);
             //Device.OnPlatform(iOS: () => { });
         }
