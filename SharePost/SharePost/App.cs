@@ -1,5 +1,4 @@
 ﻿using SharePost.Base;
-using SharePost.Factory;
 using SharePost.View;
 using SharePost.View.Account;
 using System;

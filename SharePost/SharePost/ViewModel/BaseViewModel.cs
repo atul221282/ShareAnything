@@ -23,7 +23,9 @@ namespace SharePost.ViewModel
         {
             get
             {
-                return !string.IsNullOrWhiteSpace(Settings.RefreskToken) && !string.IsNullOrWhiteSpace(Settings.UserDetails);
+                return !string.IsNullOrWhiteSpace(Settings.RefreskToken)
+                    && !string.IsNullOrWhiteSpace(Settings.UserDetails)
+                    && !string.IsNullOrWhiteSpace(Settings.AccessToken);
             }
 
         }
@@ -55,11 +57,6 @@ namespace SharePost.ViewModel
             App.Current.MainPage = new NavigationPage(page);
         }
 
-        public async virtual Task<JObject> SetTokenAndUserDetails(string accessToken)
-        {
-            var userInfo = await EndpointAndTokenHelper.CallUserInfoEndpoint(accessToken);
-            return userInfo;
-        }
 
         #region "OnProperty"
         /// <summary>

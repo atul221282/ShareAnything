@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 using SharePost.Extension;
 using Xamarin.Forms;
 using Plugin.DeviceInfo;
-using SharePost.Factory;
 
 namespace SharePost.View.Account
 {

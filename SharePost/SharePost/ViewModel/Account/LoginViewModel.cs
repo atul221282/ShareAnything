@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using SharePost.Extension;
 using Xamarin.Forms;
 using SharePost.View;
-using SharePost.Factory;
 using Newtonsoft.Json.Linq;
 
 namespace SharePost.ViewModel.Account
@@ -66,10 +65,8 @@ namespace SharePost.ViewModel.Account
                 if (result.IsSuccessStatusCode)
                 {
                     SetMainPage(new MainPage());
-                    JToken token = JObject.Parse(await result.Content.ReadAsStringAsync());
-                    string accessToken = (string)token.SelectToken("access_token");
-                    string refreshToken = (string)token.SelectToken("refresh_token");
-                    var userData = await SetTokenAndUserDetails(accessToken);
+                    EndpointAndTokenHelper.SetTokens(await result.Content.ReadAsStringAsync());
+                    var userDetails = await EndpointAndTokenHelper.CallUserInfoEndpoint(Settings.AccessToken);
                     //set token setting and user detail setting
                 }
 

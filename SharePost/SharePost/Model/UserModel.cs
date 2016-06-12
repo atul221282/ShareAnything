@@ -16,5 +16,7 @@ namespace SharePost.Model
         public string UserName { get; set; }
         [DataMember, Required]
         public string FromattedName { get; set; }
+
+
     }
 }

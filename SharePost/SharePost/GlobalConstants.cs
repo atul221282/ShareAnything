@@ -26,6 +26,10 @@ namespace SharePost
         public const string skRefreshToken = "skRefreshToken";
         public static readonly string skRefreshTokenDefault = string.Empty;
 
+        public const string skAccessToken = "skAccessToken";
+        public static readonly string skAccessTokenDefault = string.Empty;
+        
+
 
         #endregion
     }

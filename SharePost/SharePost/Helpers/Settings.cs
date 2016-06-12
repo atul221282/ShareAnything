@@ -54,7 +54,7 @@ namespace SharePost.Helpers
             }
             set
             {
-                AppSettings.AddOrUpdateValue<string>(SettingConstants.skUserDetailsDefault, value);
+                AppSettings.AddOrUpdateValue<string>(SettingConstants.skUserDetailsKey, value);
             }
         }
 
@@ -76,5 +76,16 @@ namespace SharePost.Helpers
             }
         }
 
+        public static string AccessToken
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skAccessToken, SettingConstants.skAccessTokenDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue<string>(SettingConstants.skAccessToken, value);
+            }
+        }
     }
 }
