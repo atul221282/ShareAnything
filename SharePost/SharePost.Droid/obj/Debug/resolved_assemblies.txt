@@ -59,3 +59,4 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Sys
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.ComponentModel.Annotations.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.ComponentModel.DataAnnotations.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Text.Encoding.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\System.Net.Primitives.dll

@@ -1,14 +1,16 @@
-﻿using Plugin.DeviceInfo;
+﻿using Newtonsoft.Json.Linq;
+using Plugin.DeviceInfo;
 using Plugin.DeviceInfo.Abstractions;
 using SharePost.Helpers;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace SharePost.ViewModel
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
 
         /// <summary>
@@ -53,9 +55,10 @@ namespace SharePost.ViewModel
             App.Current.MainPage = new NavigationPage(page);
         }
 
-        public virtual void SetTokenAndUserDetails()
+        public async virtual Task<JObject> SetTokenAndUserDetails(string accessToken)
         {
-            
+            var userInfo = await EndpointAndTokenHelper.CallUserInfoEndpoint(accessToken);
+            return userInfo;
         }
 
         #region "OnProperty"

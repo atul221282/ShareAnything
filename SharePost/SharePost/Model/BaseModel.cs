@@ -1,6 +1,6 @@
 ﻿namespace SharePost.Model
 {
-    public class BaseModel
+    public abstract class BaseModel
     {
     }
 }

@@ -10,6 +10,7 @@ using SharePost.Extension;
 using Xamarin.Forms;
 using SharePost.View;
 using SharePost.Factory;
+using Newtonsoft.Json.Linq;
 
 namespace SharePost.ViewModel.Account
 {
@@ -54,20 +55,24 @@ namespace SharePost.ViewModel.Account
         /// <summary>
         /// Logins this instance.
         /// </summary>
-        public async void  Login()
+        public async void Login()
         {
             using (HttpClient client = new HttpClient())
             {
-                var url = "http://192.168.0.7/ShareAnything.API/api/Account/Login";
+                var url = ShareAnythingConstants.ExpenseTrackerAPI + "api/Account/Login";
                 var result = await client.PostStringAsync<object>(url,
                     new { EmailAddress = this.UserName, Password = this.Password });
 
                 if (result.IsSuccessStatusCode)
                 {
                     SetMainPage(new MainPage());
+                    JToken token = JObject.Parse(await result.Content.ReadAsStringAsync());
+                    string accessToken = (string)token.SelectToken("access_token");
+                    string refreshToken = (string)token.SelectToken("refresh_token");
+                    var userData = await SetTokenAndUserDetails(accessToken);
                     //set token setting and user detail setting
                 }
-                 
+
             }
         }
 
