@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using SharePost.Extension;
 using Xamarin.Forms;
 using Plugin.DeviceInfo;
+using SharePost.Factory;
 
 namespace SharePost.View.Account
 {
@@ -32,10 +33,7 @@ namespace SharePost.View.Account
         /// </summary>
         /// <param name="login">The login.</param>
         /// <exception cref="System.NotImplementedException"></exception>
-        private void NavigateUser(Login login)
-        {
-            App.Current.MainPage = new NavigationPage(new MainPage());
-        }
+        
 
         /// <summary>
         /// Called when [clicked_btn login].
@@ -50,26 +48,15 @@ namespace SharePost.View.Account
                 //var locator = CrossGeolocator.Current;
                 //locator.DesiredAccuracy = 50;
                 //var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-
                 //Debug.WriteLine("Position Status: {0}", position.Timestamp);
                 //Debug.WriteLine("Position Latitude: {0}", position.Latitude);
                 //Debug.WriteLine("Position Longitude: {0}", position.Longitude);
-                using (HttpClient client = new HttpClient())
-                {
-                    var url = "http://192.168.0.7/ShareAnything.API/api/Account/Login";
-                    var result = await client.PostStringAsync<object>(url,
-                        new { EmailAddress = vm.UserName, Password = vm.Password });
-                    if (result.IsSuccessStatusCode)
-                        NavigateUser(this);
-                }
+                vm.Login();
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("Unable to get location, may need to increase timeout: " + ex);
             }
-
-
-
             //Device.OnPlatform(iOS: IosAction, Android: AndroidAction, WinPhone: WindoeAction);
             //Device.OnPlatform(iOS: () => { });
         }
@@ -94,7 +81,7 @@ namespace SharePost.View.Account
         protected override void OnAppearing()
         {
             if (vm.IsUserLoggedIn)
-                NavigateUser(this);
+                vm.SetMainPage(new MainPage());
         }
 
 

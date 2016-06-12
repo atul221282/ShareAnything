@@ -11,14 +11,6 @@ namespace SharePost.Factory
 {
     public static class RenderViewFactory
     {
-        /// <summary>
-        /// Gets the page.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <returns></returns>
-        public static T GetPage<T>() where T : class
-        {
-            return new Login() as T;
-        }
+       
     }
 }

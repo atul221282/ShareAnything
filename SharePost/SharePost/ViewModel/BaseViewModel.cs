@@ -1,4 +1,6 @@
-﻿using SharePost.Helpers;
+﻿using Plugin.DeviceInfo;
+using Plugin.DeviceInfo.Abstractions;
+using SharePost.Helpers;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -40,6 +42,20 @@ namespace SharePost.ViewModel
                     return false;
             }
 
+        }
+
+        /// <summary>
+        /// Sets the main page.
+        /// </summary>
+        /// <param name="page">The page.</param>
+        public virtual void SetMainPage(Page page)
+        {
+            App.Current.MainPage = new NavigationPage(page);
+        }
+
+        public virtual void SetTokenAndUserDetails()
+        {
+            
         }
 
         #region "OnProperty"
