@@ -79,6 +79,7 @@ namespace SharePost.View.Account
         /// </remarks>
         protected override void OnAppearing()
         {
+            //Check token expiry time also
             if (vm.IsUserLoggedIn)
                 vm.SetMainPage(new MainPage());
         }

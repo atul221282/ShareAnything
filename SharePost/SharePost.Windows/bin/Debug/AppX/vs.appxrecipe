@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
       <PackagePath>SharePost.Windows.exe</PackagePath>
-      <Modified>2016-06-11T15:02:25.916</Modified>
+      <Modified>2016-06-12T14:22:00.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -60,7 +60,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-11T15:01:28.707</Modified>
+      <Modified>2016-06-12T14:15:51.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
@@ -152,7 +152,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-11T15:02:26.354</Modified>
+      <Modified>2016-06-12T14:22:00.791</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
