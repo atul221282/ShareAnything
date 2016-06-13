@@ -2,6 +2,7 @@
 using Plugin.DeviceInfo;
 using Plugin.DeviceInfo.Abstractions;
 using SharePost.Helpers;
+using SharePost.Model;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -23,19 +24,12 @@ namespace SharePost.ViewModel
         {
             get
             {
-                return !string.IsNullOrWhiteSpace(Settings.RefreskToken)
+                TokenModelResponse model = CommonHelper.GetTokenResponse();
+                return !string.IsNullOrWhiteSpace(model?.RefreshToken)
                     && !string.IsNullOrWhiteSpace(Settings.UserDetails)
-                    && !string.IsNullOrWhiteSpace(Settings.AccessToken);
+                    && !string.IsNullOrWhiteSpace(model?.AccessToken);
             }
 
-        }
-
-        public bool HasTokenExpred
-        {
-            get
-            {
-                return DateTimeOffset.Now > Settings.TokenExpiresAt || !Settings.TokenExpiresAt.HasValue;
-            }
         }
 
         /// <summary>
@@ -56,16 +50,7 @@ namespace SharePost.ViewModel
 
         }
 
-        /// <summary>
-        /// Sets the main page.
-        /// </summary>
-        /// <param name="page">The page.</param>
-        public virtual void SetMainPage(Page page)
-        {
-            App.Current.MainPage = new NavigationPage(page);
-        }
-
-
+        
         #region "OnProperty"
         /// <summary>
         /// Occurs when a property value changes.

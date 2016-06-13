@@ -40,9 +40,11 @@
     <Compile Include="Contracts\IGeolocation.cs" />
     <Compile Include="Extension\HttpClientExtension.cs" />
     <Compile Include="GlobalConstants.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
     <Compile Include="Helpers\EndpointAndTokenHelper.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Helpers\ShareAnythingConstants.cs" />
+    <Compile Include="Helpers\SharePostClient.cs" />
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\PostModel.cs" />
     <Compile Include="Model\TokenModelResponse.cs" />

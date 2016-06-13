@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SharePost.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace SharePost.Model
         {
             get
             {
-                return DateTimeOffset.Now.AddMinutes(this.ExpiresIn);
+                return Settings.ExpiresAt;
             }
 
         }

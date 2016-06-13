@@ -20,10 +20,9 @@ namespace SharePost.Helpers
         /// <param name="tokenResponse">The token response.</param>
         public static void SetTokens(string tokenResponse)
         {
-            var model = JsonConvert.DeserializeObject<TokenModelResponse>(tokenResponse);
-            Settings.AccessToken = model.AccessToken;
-            Settings.RefreskToken = model.RefreshToken;
-            Settings.TokenExpiresAt = model.ExpiresAt;
+            JToken token = JObject.Parse(tokenResponse);
+            Settings.ExpiresAt = DateTimeOffset.Now.AddMinutes((int)token.SelectToken("expires_in"));
+            Settings.TokenResponse = tokenResponse;
         }
         /// <summary>
         /// 
@@ -34,15 +33,12 @@ namespace SharePost.Helpers
         {
             var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
             var response = await client.GetAsync(ShareAnythingConstants.IdSrvUserInfo);
-
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var json = await response.Content.ReadAsStringAsync();
                 Settings.UserDetails = json;
                 return JObject.Parse(json); //.ToString();
-
             }
             else
             {

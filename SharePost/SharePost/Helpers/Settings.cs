@@ -19,25 +19,7 @@ namespace SharePost.Helpers
                 return CrossSettings.Current;
             }
         }
-
-        /// <summary>
-        /// Gets or sets the general settings.
-        /// </summary>
-        /// <value>
-        /// The general settings.
-        /// </value>
-        public static string GeneralSettings
-        {
-            get
-            {
-                return AppSettings.GetValueOrDefault<string>(SettingConstants.SettingsKey, SettingConstants.SettingsDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue<string>(SettingConstants.SettingsKey, value);
-            }
-        }
-
+        
         /// <summary>
         /// Gets or sets the user details.
         /// Details like UserId and UserName(aka email),
@@ -60,45 +42,42 @@ namespace SharePost.Helpers
         }
 
         /// <summary>
-        /// Gets or sets the refresk token.
+        /// Gets or sets the token response.
         /// </summary>
         /// <value>
-        /// The refresk token.
+        /// The token response.
         /// </value>
-        public static string RefreskToken
+        public static string TokenResponse
         {
             get
             {
-                return AppSettings.GetValueOrDefault<string>(SettingConstants.skRefreshToken, SettingConstants.skRefreshTokenDefault);
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skTokenResponse, 
+                    SettingConstants.skTokenResponseDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue<string>(SettingConstants.skRefreshToken, value);
+                AppSettings.AddOrUpdateValue<string>(SettingConstants.skTokenResponse, value);
             }
         }
 
-        public static string AccessToken
+        /// <summary>
+        /// Gets or sets the token response.
+        /// </summary>
+        /// <value>
+        /// The token response.
+        /// </value>
+        public static DateTimeOffset? ExpiresAt
         {
             get
             {
-                return AppSettings.GetValueOrDefault<string>(SettingConstants.skAccessToken, SettingConstants.skAccessTokenDefault);
+                return AppSettings.GetValueOrDefault<DateTimeOffset?>(SettingConstants.skExpiresAt, 
+                    SettingConstants.skExpiresAtDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue<string>(SettingConstants.skAccessToken, value);
+                AppSettings.AddOrUpdateValue<DateTimeOffset?>(SettingConstants.skExpiresAt, value);
             }
         }
 
-        public static DateTimeOffset? TokenExpiresAt
-        {
-            get
-            {
-                return AppSettings.GetValueOrDefault<DateTimeOffset?>(SettingConstants.skTokenExpiresAt, SettingConstants.skTokenExpiresAtDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue<DateTimeOffset?>(SettingConstants.skTokenExpiresAt, value);
-            }
-        }
     }
 }

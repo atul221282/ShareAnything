@@ -44,3 +44,5 @@ C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.DeviceInfo.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.DeviceInfo.xml
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb

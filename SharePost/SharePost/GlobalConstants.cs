@@ -11,6 +11,8 @@ namespace SharePost
     /// </summary>
     public static class GlobalConstants
     {
+        public const string resourceOwnerCredFlowClientId = "nativeclient";
+        public const string resourceOwnerCredFlowSecret = "secret";
     }
 
     public static class SettingConstants
@@ -31,6 +33,12 @@ namespace SharePost
 
         public const string skTokenExpiresAt = "skTokenExpiresAt";
         public static readonly DateTimeOffset? skTokenExpiresAtDefault = null;
+
+        public static readonly string skTokenResponseDefault = string.Empty;
+        public const string skTokenResponse = "skTokenResponse";
+        
+        public const string skExpiresAt= "skExpiresAt";
+        internal static readonly DateTimeOffset? skExpiresAtDefault = null;
 
 
 

@@ -49,8 +49,6 @@ namespace SharePost.View.Account
         {
             try
             {
-
-
                 var pp = CrossDeviceInfo.Current;
                 //var locator = CrossGeolocator.Current;
                 //locator.DesiredAccuracy = 50;
@@ -88,8 +86,8 @@ namespace SharePost.View.Account
         protected override void OnAppearing()
         {
             //Check token expiry time also
-            if (vm.IsUserLoggedIn && !vm.HasTokenExpred)
-                vm.SetMainPage(new MainPage());
+            if (vm.IsUserLoggedIn && !CommonHelper.HasTokenExpired())
+                CommonHelper.SetMainPage(new MainPage());
         }
 
 

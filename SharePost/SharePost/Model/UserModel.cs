@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,12 +12,18 @@ namespace SharePost.Model
     [DataContract]
     public class UserModel : BaseModel
     {
-
-        [DataMember, Required]
-        public string UserName { get; set; }
-        [DataMember, Required]
-        public string FromattedName { get; set; }
-
+        [DataMember, JsonProperty("Name")]
+        public string Name { get; set; }
+        [DataMember, JsonProperty("id")]
+        public string Id { get; set; }
+        [DataMember, JsonProperty("given_name")]
+        public string GivenName { get; set; }
+        [DataMember, JsonProperty("family_name")]
+        public string FamilyName { get; set; }
+        [DataMember, JsonProperty("role")]
+        public string Role { get; set; }
+        [DataMember, JsonProperty("permissions")]
+        public string Permissions { get; set; }
 
     }
 }

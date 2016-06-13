@@ -15,9 +15,9 @@ namespace SharePost.ViewModel.Account
 {
     public class LoginViewModel : BaseViewModel
     {
+
         private string _userName;
         private string _password;
-
         /// <summary>
         /// Gets or sets the name of the user.
         /// </summary>
@@ -64,9 +64,9 @@ namespace SharePost.ViewModel.Account
 
                 if (result.IsSuccessStatusCode)
                 {
-                    SetMainPage(new MainPage());
+                    CommonHelper.SetMainPage(new MainPage());
                     EndpointAndTokenHelper.SetTokens(await result.Content.ReadAsStringAsync());
-                    var userDetails = await EndpointAndTokenHelper.CallUserInfoEndpoint(Settings.AccessToken);
+                    var userDetails = await EndpointAndTokenHelper.CallUserInfoEndpoint(CommonHelper.GetTokenResponse().AccessToken);
                     //set token setting and user detail setting
                 }
 
