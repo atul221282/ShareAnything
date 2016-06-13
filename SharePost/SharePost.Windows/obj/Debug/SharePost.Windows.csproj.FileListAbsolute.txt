@@ -78,3 +78,5 @@ C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInf
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.pdb

@@ -6,12 +6,21 @@
   <ScrollView x:Name="scrollView">
     <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand"
                  Padding="20" Spacing="10">
+      
+      <ActivityIndicator IsVisible="{Binding IsLoading}" VerticalOptions="CenterAndExpand"
+                               IsRunning="{Binding IsLoading}"/>
+
       <Entry x:Name="enEmail" Placeholder="Email" Text="{Binding UserName}"></Entry>
       <Entry x:Name="enPassword" IsPassword="True" Text="{Binding Password}" Placeholder="Password"></Entry>
-      <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin"></Button>
+      <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin" IsEnabled="{Binding !IsLoading}"></Button>
       <Button Text="Register" Clicked="OnClicked_btnRegister" x:Name="btnRegister"></Button>
-   
+
+
     </StackLayout>
+
+
+
+
   </ScrollView>
 
 

@@ -109,5 +109,10 @@ C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Plugin.DeviceInfo.Abstractions.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.DeviceInfo.Abstractions.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Plugin.DeviceInfo.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.dll.config
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Thinktecture.IdentityModel.Client.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Thinktecture.IdentityModel.Client.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\Thinktecture.IdentityModel.Client.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\android\assets\Thinktecture.IdentityModel.Client.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\obj\Debug\SharePost.Droid.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost.Droid\bin\Debug\SharePost.Droid.dll.mdb

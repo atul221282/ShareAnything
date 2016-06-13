@@ -38,7 +38,7 @@ namespace SharePost
         public const string skTokenResponse = "skTokenResponse";
         
         public const string skExpiresAt= "skExpiresAt";
-        internal static readonly DateTimeOffset? skExpiresAtDefault = null;
+        internal static readonly DateTime? skExpiresAtDefault = null;
 
 
 

@@ -26,11 +26,6 @@ namespace SharePost.View.Account
             InitializeComponent();
             BindingContext = vm;
 
-            //Settings.AccessToken = "";
-            //Settings.RefreskToken = "";
-            //Settings.UserDetails = "";
-            //Settings.TokenExpiresAt = null;
-
         }
 
         /// <summary>
@@ -49,13 +44,6 @@ namespace SharePost.View.Account
         {
             try
             {
-                var pp = CrossDeviceInfo.Current;
-                //var locator = CrossGeolocator.Current;
-                //locator.DesiredAccuracy = 50;
-                //var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-                //Debug.WriteLine("Position Status: {0}", position.Timestamp);
-                //Debug.WriteLine("Position Latitude: {0}", position.Latitude);
-                //Debug.WriteLine("Position Longitude: {0}", position.Longitude);
                 vm.Login();
             }
             catch (Exception ex)
@@ -83,11 +71,13 @@ namespace SharePost.View.Account
         /// <remarks>
         /// To be added.
         /// </remarks>
-        protected override void OnAppearing()
+        async protected override void OnAppearing()
         {
             //Check token expiry time also
             if (vm.IsUserLoggedIn && !CommonHelper.HasTokenExpired())
                 CommonHelper.SetMainPage(new MainPage());
+
+            
         }
 
 

@@ -66,16 +66,16 @@ namespace SharePost.Helpers
         /// <value>
         /// The token response.
         /// </value>
-        public static DateTimeOffset? ExpiresAt
+        public static DateTime? ExpiresAt
         {
             get
             {
-                return AppSettings.GetValueOrDefault<DateTimeOffset?>(SettingConstants.skExpiresAt, 
+                return AppSettings.GetValueOrDefault<DateTime?>(SettingConstants.skExpiresAt, 
                     SettingConstants.skExpiresAtDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue<DateTimeOffset?>(SettingConstants.skExpiresAt, value);
+                AppSettings.AddOrUpdateValue<DateTime?>(SettingConstants.skExpiresAt, value);
             }
         }
 

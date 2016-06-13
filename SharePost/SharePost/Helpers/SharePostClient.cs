@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Thinktecture.IdentityModel.Client;
 
 namespace SharePost.Helpers
 {
@@ -12,63 +14,70 @@ namespace SharePost.Helpers
     /// </summary>
     public static class SharePostClient
     {
-        
-        ///// <summary>
-        ///// Gets the client.
-        ///// </summary>
-        ///// <param name="authorize">if set to <c>true</c> [authorize].</param>
-        ///// <param name="requestedVersion">The requested version.</param>
-        ///// <returns></returns>
-        //public static HttpClient GetClient(bool authorize = true, string requestedVersion = null)
-        //{
-        //    if (authorize == true)
-        //        CheckAndPossiblyRefreshToken((HttpContext.Current.User.Identity as ClaimsIdentity));
-        //}
 
-        //private static void CheckAndPossiblyRefreshToken(ClaimsIdentity id)
-        //{
-        //    // check if the access token hasn't expired.
-        //    if (DateTime.Now.ToLocalTime() >=
-        //         (DateTime.Parse(id.FindFirst("expires_at").Value)))
-        //    {
-        //        // expired.  Get a new one.
-        //        var tokenEndpointClient = new OAuth2Client(
-        //            new Uri(ShareAnythingConstants.IdSrvToken), 
-        //            GlobalConstants.resourceOwnerCredFlowClientId, 
-        //            GlobalConstants.resourceOwnerCredFlowSecret);
+        /// <summary>
+        /// Gets the client.
+        /// </summary>
+        /// <param name="authorize">if set to <c>true</c> [authorize].</param>
+        /// <param name="requestedVersion">The requested version.</param>
+        /// <returns></returns>
+        public static HttpClient GetClient(bool authorize = true, string requestedVersion = null)
+        {
+            if (authorize == true)
+                CheckAndPossiblyRefreshToken();
 
-        //        var tokenEndpointResponse =
-        //             tokenEndpointClient
-        //            .RequestRefreshTokenAsync(id.FindFirst("refresh_token").Value).Result;
+            HttpClient client = new HttpClient();
+            var tokenResponse = CommonHelper.GetTokenResponse();
+            var token = tokenResponse?.AccessToken;
+            if (token != null && authorize == true)
+            {
+                client.SetBearerToken(token);
+            }
 
-        //        if (!tokenEndpointResponse.IsError)
-        //        {
-        //            // replace the claims with the new values - this means creating a 
-        //            // new identity!                              
-        //            var result = from claim in id.Claims
-        //                         where claim.Type != "access_token" && claim.Type != "refresh_token" &&
-        //                               claim.Type != "expires_at"
-        //                         select claim;
+            client.BaseAddress = new Uri(ShareAnythingConstants.ExpenseTrackerAPI);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
 
-        //            var claims = result.ToList();
+            if (requestedVersion != null)
+            {
+                // through a custom request header
+                //client.DefaultRequestHeaders.Add("api-version", requestedVersion);
+                // through content negotiation
+                client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/vnd.expensetrackerapi.v"
+                        + requestedVersion + "+json"));
+            }
+            return client;
+        }
 
-        //            claims.Add(new Claim("access_token", tokenEndpointResponse.AccessToken));
-        //            claims.Add(new Claim("expires_at",
-        //                         DateTime.Now.AddSeconds(tokenEndpointResponse.ExpiresIn)
-        //                         .ToLocalTime().ToString()));
-        //            claims.Add(new Claim("refresh_token", tokenEndpointResponse.RefreshToken));
+        async private static void CheckAndPossiblyRefreshToken()
+        {
+            // check if the access token hasn't expired.
+            if (CommonHelper.HasTokenExpired())
+            {
+                // expired.  Get a new one.
+                var tokenEndpointClient = new OAuth2Client(
+                    new Uri(ShareAnythingConstants.IdSrvToken),
+                    GlobalConstants.resourceOwnerCredFlowClientId,
+                    GlobalConstants.resourceOwnerCredFlowSecret);
 
-        //            var newIdentity = new ClaimsIdentity(claims, "Cookies");
-        //            var wrapper = new HttpRequestWrapper(HttpContext.Current.Request);
-        //            wrapper.GetOwinContext().Authentication.SignIn(newIdentity);
-        //        }
-        //        else
-        //        {
-        //            // log, ...
-        //            throw new Exception("An error has occurred while refreshing token");
-        //        }
-        //    }
+                var tokenEndpointResponse =await  tokenEndpointClient
+                    .RequestRefreshTokenAsync(CommonHelper.GetTokenResponse().RefreshToken);
 
-        //}
+                if (!tokenEndpointResponse.IsError)
+                {
+                    // replace the claims with the new values - this means creating a 
+                    // new identity!                              
+                    var result = tokenEndpointResponse;
+                }
+                else
+                {
+                    // log, ...
+                    throw new Exception("An error has occurred while refreshing token");
+                }
+            }
+
+        }
     }
 }

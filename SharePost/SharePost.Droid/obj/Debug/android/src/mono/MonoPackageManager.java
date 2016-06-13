@@ -148,8 +148,9 @@ class MonoPackageManager_Resources {
 		"System.Diagnostics.Tools.dll",
 		"System.Runtime.Serialization.Primitives.dll",
 		"System.ComponentModel.Annotations.dll",
-		"System.Text.Encoding.dll",
+		"Thinktecture.IdentityModel.Client.dll",
 		"System.Net.Primitives.dll",
+		"System.Text.Encoding.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -66,6 +66,9 @@
     <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.2.0.45\lib\win81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.dll">
+      <PackagePath>Thinktecture.IdentityModel.Client.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

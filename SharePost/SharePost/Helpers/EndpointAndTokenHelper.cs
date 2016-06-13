@@ -21,7 +21,7 @@ namespace SharePost.Helpers
         public static void SetTokens(string tokenResponse)
         {
             JToken token = JObject.Parse(tokenResponse);
-            Settings.ExpiresAt = DateTimeOffset.Now.AddMinutes((int)token.SelectToken("expires_in"));
+            Settings.ExpiresAt = DateTime.Now.AddMinutes((int)token.SelectToken("expires_in"));
             Settings.TokenResponse = tokenResponse;
         }
         /// <summary>

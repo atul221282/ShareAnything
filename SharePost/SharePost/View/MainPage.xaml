@@ -5,8 +5,10 @@
 
   <ContentPage.Content>
     <StackLayout Padding="30">
-      <Label Text="Posts" FontSize="20"></Label>
-
+      <StackLayout>
+        <Label Text="Posts" FontSize="20" HorizontalOptions="CenterAndExpand"></Label>
+        <Button Text="Get Post" FontSize="20" HorizontalOptions="CenterAndExpand" Clicked="btnGetPost_OnClicked" x:Name="btnGetPost"></Button>
+      </StackLayout>
       <ListView x:Name="postList" ItemsSource="{Binding Posts}" ItemTapped="postList_OnItemTapped">
         <ListView.ItemTemplate>
           <DataTemplate>
@@ -25,5 +27,5 @@
       </ListView>
     </StackLayout>
   </ContentPage.Content>
-  
+
 </ContentPage>

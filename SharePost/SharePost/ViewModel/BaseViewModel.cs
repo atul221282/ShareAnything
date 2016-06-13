@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using Plugin.DeviceInfo;
 using Plugin.DeviceInfo.Abstractions;
+using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
 using SharePost.Helpers;
 using SharePost.Model;
 using System;
@@ -13,6 +15,26 @@ namespace SharePost.ViewModel
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
+
+        private bool _isLoading = false;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance has location found.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if this instance has location found; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsLoading
+        {
+            get { return _isLoading; }
+            set
+            {
+                if (_isLoading == value)
+                    return;
+                _isLoading = value;
+                OnPropertyChanged();
+            }
+        }
 
         /// <summary>
         /// Gets a value indicating whether this instance is user logged in.
@@ -50,7 +72,16 @@ namespace SharePost.ViewModel
 
         }
 
-        
+        async public virtual Task<Position> GetLocation()
+        {
+            this.IsLoading = true;
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+            var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
+            this.IsLoading = false;
+            return position;
+        }
+
         #region "OnProperty"
         /// <summary>
         /// Occurs when a property value changes.

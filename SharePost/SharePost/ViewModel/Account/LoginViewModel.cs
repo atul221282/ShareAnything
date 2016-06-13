@@ -10,14 +10,25 @@ using SharePost.Extension;
 using Xamarin.Forms;
 using SharePost.View;
 using Newtonsoft.Json.Linq;
+using Plugin.DeviceInfo;
+using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
 
 namespace SharePost.ViewModel.Account
 {
     public class LoginViewModel : BaseViewModel
     {
-
+        #region "Property"
         private string _userName;
         private string _password;
+        private Position _position;
+
+        public Position Position
+        {
+            get { return _position; }
+            set { _position = value; OnPropertyChanged(); }
+        }
+
         /// <summary>
         /// Gets or sets the name of the user.
         /// </summary>
@@ -33,7 +44,6 @@ namespace SharePost.ViewModel.Account
                 OnPropertyChanged();
             }
         }
-
 
         /// <summary>
         /// Gets or sets the password.
@@ -51,12 +61,14 @@ namespace SharePost.ViewModel.Account
             }
         }
 
+        #endregion
+
         /// <summary>
         /// Logins this instance.
         /// </summary>
         public async void Login()
         {
-            using (HttpClient client = new HttpClient())
+            using (HttpClient client = SharePostClient.GetClient(false))
             {
                 var url = ShareAnythingConstants.ExpenseTrackerAPI + "api/Account/Login";
                 var result = await client.PostStringAsync<object>(url,
@@ -64,10 +76,11 @@ namespace SharePost.ViewModel.Account
 
                 if (result.IsSuccessStatusCode)
                 {
-                    CommonHelper.SetMainPage(new MainPage());
                     EndpointAndTokenHelper.SetTokens(await result.Content.ReadAsStringAsync());
-                    var userDetails = await EndpointAndTokenHelper.CallUserInfoEndpoint(CommonHelper.GetTokenResponse().AccessToken);
-                    //set token setting and user detail setting
+                    var userDetails = await EndpointAndTokenHelper
+                        .CallUserInfoEndpoint(CommonHelper.GetTokenResponse().AccessToken);
+                    Position = await GetLocation();
+                    CommonHelper.SetMainPage(new MainPage(Position));
                 }
 
             }

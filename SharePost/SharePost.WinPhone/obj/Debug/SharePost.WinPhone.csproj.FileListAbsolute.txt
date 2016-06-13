@@ -80,3 +80,6 @@ C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.DeviceIn
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.DeviceInfo.xml
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\SharePost.WinPhone.exe.config
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Thinktecture.IdentityModel.Client.dll
+C:\Projects\ShareAnything\SharePost\SharePost.WinPhone\bin\Debug\Thinktecture.IdentityModel.Client.pdb

@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharePost.Model
+namespace SharePost.Model.Post
 {
     [DataContract]
     public class PostModel
@@ -18,7 +18,6 @@ namespace SharePost.Model
 
     public class Rootobject
     {
-        public Shareanythingposttypetransportlist[] ShareAnythingPostTypeTransportList { get; set; }
         public Shareanythingposttransportlist[] ShareAnythingPostTransportList { get; set; }
         public object Claims { get; set; }
         public object SuccessMessage { get; set; }
@@ -30,21 +29,7 @@ namespace SharePost.Model
         public object RowVersion { get; set; }
     }
 
-    public class Shareanythingposttypetransportlist
-    {
-        public int SortOrder { get; set; }
-        public string Code { get; set; }
-        public string Description { get; set; }
-        public int? Id { get; set; }
-        public string AuditCreatedBy { get; set; }
-        public string AuditLastUpdatedBy { get; set; }
-        public DateTime? AuditCreatedDate { get; set; }
-        public DateTime? AuditLastUpdatedDate { get; set; }
-        public bool? IsDeleted { get; set; }
-        public int EntityState { get; set; }
-        public string RowVersion { get; set; }
-    }
-
+    
     public class Shareanythingposttransportlist
     {
         public Addresstransport AddressTransport { get; set; }
