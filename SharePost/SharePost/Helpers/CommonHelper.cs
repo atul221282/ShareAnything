@@ -27,7 +27,7 @@ namespace SharePost.Helpers
         public static bool HasTokenExpired()
         {
             TokenModelResponse model = GetTokenResponse();
-            return model == null || DateTimeOffset.Now > model?.ExpiresAt || !model.ExpiresAt.HasValue;
+            return model == null || DateTimeOffset.Now > model?.ExpiresAt || (model.ExpiresAt == DateTime.MinValue);
         }
 
         public static void SetMainPage(Page page)

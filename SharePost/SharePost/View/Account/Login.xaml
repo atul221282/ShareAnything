@@ -7,7 +7,8 @@
     <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand"
                  Padding="20" Spacing="10">
       
-      <ActivityIndicator IsVisible="{Binding IsLoading}" VerticalOptions="CenterAndExpand"
+      <ActivityIndicator IsVisible="{Binding IsLoading}" AnchorX="0.5" AnchorY="0.5" Opacity="2"
+                         VerticalOptions="CenterAndExpand"
                                IsRunning="{Binding IsLoading}"/>
 
       <Entry x:Name="enEmail" Placeholder="Email" Text="{Binding UserName}"></Entry>

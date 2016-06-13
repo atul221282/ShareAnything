@@ -30,7 +30,7 @@ namespace SharePost.Model
         public string IssuedAt { get; set; }
 
         [JsonProperty(".expires")]
-        public DateTimeOffset? ExpiresAt
+        public DateTime ExpiresAt
         {
             get
             {

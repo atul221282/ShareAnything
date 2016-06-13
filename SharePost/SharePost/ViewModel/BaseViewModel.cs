@@ -82,6 +82,13 @@ namespace SharePost.ViewModel
             return position;
         }
 
+
+        public virtual void ClearAllSettings()
+        {
+            Settings.ExpiresAt = DateTime.MinValue;
+            Settings.TokenResponse = string.Empty;
+            Settings.UserDetails = string.Empty;
+        }
         #region "OnProperty"
         /// <summary>
         /// Occurs when a property value changes.

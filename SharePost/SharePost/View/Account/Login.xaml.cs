@@ -25,7 +25,7 @@ namespace SharePost.View.Account
             vm.Password = "123456";
             InitializeComponent();
             BindingContext = vm;
-
+            //vm.ClearAllSettings();
         }
 
         /// <summary>
