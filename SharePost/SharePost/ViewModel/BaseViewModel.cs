@@ -30,6 +30,14 @@ namespace SharePost.ViewModel
 
         }
 
+        public bool HasTokenExpred
+        {
+            get
+            {
+                return DateTimeOffset.Now > Settings.TokenExpiresAt || !Settings.TokenExpiresAt.HasValue;
+            }
+        }
+
         /// <summary>
         /// Gets or sets a value indicating whether this instance is tablet.
         /// </summary>

@@ -45,7 +45,7 @@
     <Compile Include="Helpers\ShareAnythingConstants.cs" />
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\PostModel.cs" />
-    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\TokenModelResponse.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

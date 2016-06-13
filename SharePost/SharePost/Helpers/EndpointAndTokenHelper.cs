@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using SharePost.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +20,10 @@ namespace SharePost.Helpers
         /// <param name="tokenResponse">The token response.</param>
         public static void SetTokens(string tokenResponse)
         {
-            JToken token = JObject.Parse(tokenResponse);
-            string accessToken = (string)token.SelectToken("access_token");
-            string refreshToken = (string)token.SelectToken("refresh_token");
-            Settings.AccessToken = accessToken;
-            Settings.RefreskToken = refreshToken;
+            var model = JsonConvert.DeserializeObject<TokenModelResponse>(tokenResponse);
+            Settings.AccessToken = model.AccessToken;
+            Settings.RefreskToken = model.RefreshToken;
+            Settings.TokenExpiresAt = model.ExpiresAt;
         }
         /// <summary>
         /// 

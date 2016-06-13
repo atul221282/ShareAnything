@@ -28,7 +28,10 @@ namespace SharePost
 
         public const string skAccessToken = "skAccessToken";
         public static readonly string skAccessTokenDefault = string.Empty;
-        
+
+        public const string skTokenExpiresAt = "skTokenExpiresAt";
+        public static readonly DateTimeOffset? skTokenExpiresAtDefault = null;
+
 
 
         #endregion

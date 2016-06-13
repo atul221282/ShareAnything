@@ -1,4 +1,5 @@
 // Helpers/Settings.cs
+using System;
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
@@ -50,7 +51,7 @@ namespace SharePost.Helpers
         {
             get
             {
-                return AppSettings.GetValueOrDefault<string>(SettingConstants.skUserDetailsKey,SettingConstants.skUserDetailsDefault);
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skUserDetailsKey, SettingConstants.skUserDetailsDefault);
             }
             set
             {
@@ -85,6 +86,18 @@ namespace SharePost.Helpers
             set
             {
                 AppSettings.AddOrUpdateValue<string>(SettingConstants.skAccessToken, value);
+            }
+        }
+
+        public static DateTimeOffset? TokenExpiresAt
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault<DateTimeOffset?>(SettingConstants.skTokenExpiresAt, SettingConstants.skTokenExpiresAtDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue<DateTimeOffset?>(SettingConstants.skTokenExpiresAt, value);
             }
         }
     }

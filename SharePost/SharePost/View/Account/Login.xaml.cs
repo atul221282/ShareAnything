@@ -25,6 +25,12 @@ namespace SharePost.View.Account
             vm.Password = "123456";
             InitializeComponent();
             BindingContext = vm;
+
+            //Settings.AccessToken = "";
+            //Settings.RefreskToken = "";
+            //Settings.UserDetails = "";
+            //Settings.TokenExpiresAt = null;
+
         }
 
         /// <summary>
@@ -32,7 +38,7 @@ namespace SharePost.View.Account
         /// </summary>
         /// <param name="login">The login.</param>
         /// <exception cref="System.NotImplementedException"></exception>
-        
+
 
         /// <summary>
         /// Called when [clicked_btn login].
@@ -43,6 +49,8 @@ namespace SharePost.View.Account
         {
             try
             {
+
+
                 var pp = CrossDeviceInfo.Current;
                 //var locator = CrossGeolocator.Current;
                 //locator.DesiredAccuracy = 50;
@@ -80,7 +88,7 @@ namespace SharePost.View.Account
         protected override void OnAppearing()
         {
             //Check token expiry time also
-            if (vm.IsUserLoggedIn)
+            if (vm.IsUserLoggedIn && !vm.HasTokenExpred)
                 vm.SetMainPage(new MainPage());
         }
 
