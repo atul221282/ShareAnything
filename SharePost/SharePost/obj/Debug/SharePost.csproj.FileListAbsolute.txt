@@ -48,3 +48,5 @@ C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityMod
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.pdb
 C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
 C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
+C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
