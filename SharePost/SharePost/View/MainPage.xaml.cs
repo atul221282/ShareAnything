@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Plugin.Geolocator.Abstractions;
+using SharePost.Helpers;
 
 namespace SharePost.View
 {
@@ -28,9 +29,9 @@ namespace SharePost.View
         public MainPage(Position position) : this()
         {
             this.position = position;
-            //vm.GetPosts(position.Longitude, position.Latitude);
+            LoadPostsByPosition(position);
         }
-        
+
 
         /// <summary>
         /// Application developers can override this method to provide behavior when the back button is pressed.
@@ -78,9 +79,19 @@ namespace SharePost.View
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
         async protected void btnGetPost_OnClicked(object sender, EventArgs events)
         {
-            vm.GetPosts(position.Longitude, position.Latitude);
+            LoadPostsByPosition(position);
         }
 
+        /// <summary>
+        /// Loads the posts by position.
+        /// </summary>
+        /// <param name="position">The position.</param>
+        private void LoadPostsByPosition(Position position)
+        {
+            var result = vm.GetPosts(position.Longitude, position.Latitude);
+            vm.PostText = EndpointAndTokenHelper.GetTokenResponse().RefreshToken +
+                EndpointAndTokenHelper.GetTokenResponse().ExpiresAt.ToString();
+        }
 
     }
 }

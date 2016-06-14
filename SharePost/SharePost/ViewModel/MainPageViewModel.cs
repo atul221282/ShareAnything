@@ -15,6 +15,7 @@ namespace SharePost.ViewModel
     {
 
         private List<PostModel> _posts;
+        private string _postText;
 
         public MainPageViewModel()
         {
@@ -34,12 +35,34 @@ namespace SharePost.ViewModel
             }
         }
 
-        async public void GetPosts(double longitude, double latitude)
+        public string PostText
         {
-            using (HttpClient client = SharePostClient.GetClient(true))
+            get { return _postText; }
+            set
             {
-                var result = await client.GetStringAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude));
+                _postText = value; OnPropertyChanged();
             }
+        }
+
+
+        public string GetPosts(double longitude, double latitude)
+        {
+            string result = string.Empty;
+            try
+            {
+
+                using (HttpClient client = SharePostClient.GetClient(true))
+                {
+                    result = client
+                        .GetStringAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude))
+                        .Result;
+                }
+            }
+            catch (Exception ex)
+            {
+                result = ex.Message;
+            }
+            return result;
         }
 
         private static List<PostModel> CreatePopsts()

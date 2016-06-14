@@ -46,9 +46,8 @@ namespace SharePost.ViewModel
         {
             get
             {
-                TokenModelResponse model = CommonHelper.GetTokenResponse();
+                TokenModelResponse model = EndpointAndTokenHelper.GetTokenResponse();
                 return !string.IsNullOrWhiteSpace(model?.RefreshToken)
-                    && !string.IsNullOrWhiteSpace(Settings.UserDetails)
                     && !string.IsNullOrWhiteSpace(model?.AccessToken);
             }
 
@@ -74,11 +73,11 @@ namespace SharePost.ViewModel
 
         async public virtual Task<Position> GetLocation()
         {
-            this.IsLoading = true;
+            
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
             var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-            this.IsLoading = false;
+            
             return position;
         }
 

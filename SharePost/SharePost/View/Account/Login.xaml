@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SharePost.Converters;assembly=SharePost"
              x:Class="SharePost.View.Account.Login">
 
-  <ScrollView x:Name="scrollView" VerticalOptions="FillAndExpand" Orientation="Vertical">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:NegateBooleanConverter x:Key="inverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView x:Name="scrollView">
     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-    
-      
-      <StackLayout  Padding="20" Spacing="10" VerticalOptions="CenterAndExpand" Orientation="Vertical">
-          <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}"/>
+      <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}" VerticalOptions="CenterAndExpand"/>
+
+      <StackLayout  Padding="20" Spacing="10" VerticalOptions="CenterAndExpand"
+                    IsVisible="{Binding IsLoading, Converter={StaticResource inverter}" Orientation="Vertical">
+
         <Entry x:Name="enEmail" Placeholder="Email" Text="{Binding UserName}"></Entry>
         <Entry x:Name="enPassword" IsPassword="True" Text="{Binding Password}" Placeholder="Password"></Entry>
         <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin" IsEnabled="{Binding !IsLoading}"></Button>
         <Button Text="Register" Clicked="OnClicked_btnRegister" x:Name="btnRegister"></Button>
+        <Button Text="Clear" Clicked="OnClicked_btnClear" x:Name="btnClear"></Button>
       </StackLayout>
 
     </StackLayout>
-
-
-
-
   </ScrollView>
 
 

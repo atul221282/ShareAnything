@@ -20,13 +20,9 @@ namespace SharePost.View {
         private global::Xamarin.Forms.Button btnGetPost;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView postList;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             btnGetPost = this.FindByName<global::Xamarin.Forms.Button>("btnGetPost");
-            postList = this.FindByName<global::Xamarin.Forms.ListView>("postList");
         }
     }
 }

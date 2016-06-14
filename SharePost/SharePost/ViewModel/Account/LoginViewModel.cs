@@ -61,6 +61,13 @@ namespace SharePost.ViewModel.Account
             }
         }
 
+        private bool _isNotLoading;
+
+        public bool IsNotLoading
+        {
+            get { return !IsLoading; }
+        }
+
         #endregion
 
         /// <summary>
@@ -68,6 +75,7 @@ namespace SharePost.ViewModel.Account
         /// </summary>
         public async void Login()
         {
+            this.IsLoading = true;
             using (HttpClient client = SharePostClient.GetClient(false))
             {
                 var url = ShareAnythingConstants.ExpenseTrackerAPI + "api/Account/Login";
@@ -76,14 +84,14 @@ namespace SharePost.ViewModel.Account
 
                 if (result.IsSuccessStatusCode)
                 {
-                    EndpointAndTokenHelper.SetTokens(await result.Content.ReadAsStringAsync());
+                    EndpointAndTokenHelper.SetToken(await result.Content.ReadAsStringAsync());
                     var userDetails = await EndpointAndTokenHelper
-                        .CallUserInfoEndpoint(CommonHelper.GetTokenResponse().AccessToken);
+                        .CallUserInfoEndpoint(EndpointAndTokenHelper.GetTokenResponse().AccessToken);
                     Position = await GetLocation();
                     CommonHelper.SetMainPage(new MainPage(Position));
                 }
-
             }
+            this.IsLoading = false;
         }
 
 

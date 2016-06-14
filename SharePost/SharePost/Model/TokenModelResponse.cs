@@ -16,7 +16,6 @@ namespace SharePost.Model
         [JsonProperty("refresh_token")]
         public string RefreshToken { get; set; }
 
-
         [JsonProperty("token_type")]
         public string TokenType { get; set; }
 
@@ -30,12 +29,9 @@ namespace SharePost.Model
         public string IssuedAt { get; set; }
 
         [JsonProperty(".expires")]
-        public DateTime ExpiresAt
+        public string ExpiresAt
         {
-            get
-            {
-                return Settings.ExpiresAt;
-            }
+            get;set;
 
         }
 

@@ -7,9 +7,11 @@
     <StackLayout Padding="30">
       <StackLayout>
         <Label Text="Posts" FontSize="20" HorizontalOptions="CenterAndExpand"></Label>
-        <Button Text="Get Post" FontSize="20" HorizontalOptions="CenterAndExpand" Clicked="btnGetPost_OnClicked" x:Name="btnGetPost"></Button>
+        <Button Text="Get Post" FontSize="20" HorizontalOptions="CenterAndExpand" 
+                Clicked="btnGetPost_OnClicked" x:Name="btnGetPost"></Button>
       </StackLayout>
-      <ListView x:Name="postList" ItemsSource="{Binding Posts}" ItemTapped="postList_OnItemTapped">
+      <Label Text="{Binding PostText}"></Label>
+      <!--<ListView x:Name="postList" ItemsSource="{Binding Posts}" ItemTapped="postList_OnItemTapped">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -24,7 +26,8 @@
             </ViewCell>
           </DataTemplate>
         </ListView.ItemTemplate>
-      </ListView>
+      </ListView>-->
+      
     </StackLayout>
   </ContentPage.Content>
 

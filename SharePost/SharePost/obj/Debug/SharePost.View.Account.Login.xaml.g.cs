@@ -32,6 +32,9 @@ namespace SharePost.View.Account {
         private global::Xamarin.Forms.Button btnRegister;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnClear;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Login));
             scrollView = this.FindByName<global::Xamarin.Forms.ScrollView>("scrollView");
@@ -39,6 +42,7 @@ namespace SharePost.View.Account {
             enPassword = this.FindByName<global::Xamarin.Forms.Entry>("enPassword");
             btnLogin = this.FindByName<global::Xamarin.Forms.Button>("btnLogin");
             btnRegister = this.FindByName<global::Xamarin.Forms.Button>("btnRegister");
+            btnClear = this.FindByName<global::Xamarin.Forms.Button>("btnClear");
         }
     }
 }

@@ -50,10 +50,13 @@ namespace SharePost.View.Account
             {
                 Debug.WriteLine("Unable to get location, may need to increase timeout: " + ex);
             }
-            //Device.OnPlatform(iOS: IosAction, Android: AndroidAction, WinPhone: WindoeAction);
-            //Device.OnPlatform(iOS: () => { });
         }
 
+
+        protected void OnClicked_btnClear(object sender, EventArgs events)
+        {
+            vm.ClearAllSettings();
+        }
         /// <summary>
         /// Called when [clicked_btn register].
         /// </summary>
@@ -74,12 +77,14 @@ namespace SharePost.View.Account
         async protected override void OnAppearing()
         {
             //Check token expiry time also
-            if (vm.IsUserLoggedIn && !CommonHelper.HasTokenExpired())
-                CommonHelper.SetMainPage(new MainPage());
+            if (vm.IsUserLoggedIn)
+            {
+                vm.IsLoading = true;
+                var position = await vm.GetLocation();
+                CommonHelper.SetMainPage(new MainPage(position));
+                vm.IsLoading = false;
+            }
 
-            
         }
-
-
     }
 }

@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Thinktecture.IdentityModel.Client;
 
 namespace SharePost.Helpers
 {
@@ -18,11 +19,48 @@ namespace SharePost.Helpers
         /// Sets the tokens and set AccessToken and RefreshToken settings
         /// </summary>
         /// <param name="tokenResponse">The token response.</param>
-        public static void SetTokens(string tokenResponse)
+        public static void SetToken(string tokenResponse)
         {
             JToken token = JObject.Parse(tokenResponse);
-            Settings.ExpiresAt = DateTime.Now.AddMinutes((int)token.SelectToken("expires_in"));
-            Settings.TokenResponse = tokenResponse;
+            TokenModelResponse model = new TokenModelResponse
+            {
+                AccessToken = (string)token.SelectToken("access_token"),
+                ExpiresIn = (int)token.SelectToken("expires_in"),
+                RefreshToken = (string)token.SelectToken("refresh_token"),
+                TokenType = (string)token.SelectToken("token_type"),
+                Username = CommonHelper.GetUserDetails()?.Name,
+                IssuedAt = DateTime.Now.ToString(),
+                ExpiresAt = DateTime.Now.AddMinutes((int)token.SelectToken("expires_in")).ToString()
+            };
+            Settings.TokenResponse = JsonConvert.SerializeObject(model);
+        }
+
+        public static void SetToken(TokenResponse response)
+        {
+            TokenModelResponse model = new TokenModelResponse
+            {
+                AccessToken = response.AccessToken,
+                ExpiresIn = (int)response.ExpiresIn,
+                RefreshToken = response.RefreshToken,
+                TokenType = response.TokenType,
+                Username = CommonHelper.GetUserDetails()?.Name,
+                IssuedAt = DateTime.Now.ToString(),
+                ExpiresAt = DateTime.Now.AddMinutes(response.ExpiresIn).ToString()
+            };
+            Settings.TokenResponse = JsonConvert.SerializeObject(model);
+        }
+
+        public static TokenModelResponse GetTokenResponse()
+        {
+            if (string.IsNullOrWhiteSpace(Settings.TokenResponse))
+                return null;
+            return JsonConvert.DeserializeObject<TokenModelResponse>(Settings.TokenResponse);
+        }
+        public static bool HasTokenExpired()
+        {
+            TokenModelResponse model = GetTokenResponse();
+            DateTime expiringTime = DateTime.Parse(model.ExpiresAt);
+            return model == null || DateTime.Now > expiringTime || (expiringTime == DateTime.MinValue);
         }
         /// <summary>
         /// 

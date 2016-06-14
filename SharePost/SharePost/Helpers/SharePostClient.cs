@@ -27,7 +27,7 @@ namespace SharePost.Helpers
                 CheckAndPossiblyRefreshToken();
 
             HttpClient client = new HttpClient();
-            var tokenResponse = CommonHelper.GetTokenResponse();
+            var tokenResponse = EndpointAndTokenHelper.GetTokenResponse();
             var token = tokenResponse?.AccessToken;
             if (token != null && authorize == true)
             {
@@ -51,31 +51,38 @@ namespace SharePost.Helpers
             return client;
         }
 
-        async private static void CheckAndPossiblyRefreshToken()
+        private static void CheckAndPossiblyRefreshToken()
         {
             // check if the access token hasn't expired.
-            if (CommonHelper.HasTokenExpired())
+            if (EndpointAndTokenHelper.HasTokenExpired())
             {
                 // expired.  Get a new one.
                 var tokenEndpointClient = new OAuth2Client(
                     new Uri(ShareAnythingConstants.IdSrvToken),
                     GlobalConstants.resourceOwnerCredFlowClientId,
                     GlobalConstants.resourceOwnerCredFlowSecret);
-
-                var tokenEndpointResponse =await  tokenEndpointClient
-                    .RequestRefreshTokenAsync(CommonHelper.GetTokenResponse().RefreshToken);
-
-                if (!tokenEndpointResponse.IsError)
+                try
                 {
-                    // replace the claims with the new values - this means creating a 
-                    // new identity!                              
-                    var result = tokenEndpointResponse;
+                    var tokenEndpointResponse = tokenEndpointClient
+                        .RequestRefreshTokenAsync(EndpointAndTokenHelper.GetTokenResponse().RefreshToken).Result;
+                    if (!tokenEndpointResponse.IsError)
+                    {
+                        // replace the claims with the new values - this means creating a 
+                        // new identity!                              
+                        var result = tokenEndpointResponse as TokenResponse;
+                        EndpointAndTokenHelper.SetToken(result);
+                    }
+                    else
+                    {
+                        // log, ...
+                        throw new Exception("An error has occurred while refreshing token");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    // log, ...
-                    throw new Exception("An error has occurred while refreshing token");
+                    var ff = ex;
                 }
+                
             }
 
         }

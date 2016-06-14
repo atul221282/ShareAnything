@@ -38,6 +38,7 @@
     <Compile Include="App.cs" />
     <Compile Include="Base\BaseApplication.cs" />
     <Compile Include="Contracts\IGeolocation.cs" />
+    <Compile Include="Converters\NegateBooleanConverter.cs" />
     <Compile Include="Extension\HttpClientExtension.cs" />
     <Compile Include="GlobalConstants.cs" />
     <Compile Include="Helpers\CommonHelper.cs" />
