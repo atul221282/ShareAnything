@@ -29,8 +29,8 @@ namespace SharePost.Helpers
                 RefreshToken = (string)token.SelectToken("refresh_token"),
                 TokenType = (string)token.SelectToken("token_type"),
                 Username = CommonHelper.GetUserDetails()?.Name,
-                IssuedAt = DateTime.Now.ToString(),
-                ExpiresAt = DateTime.Now.AddMinutes((int)token.SelectToken("expires_in")).ToString()
+                IssuedAt = DateTime.UtcNow.ToString(),
+                ExpiresAt = DateTime.UtcNow.AddMinutes((int)token.SelectToken("expires_in")).ToString()
             };
             Settings.TokenResponse = JsonConvert.SerializeObject(model);
         }
@@ -44,8 +44,8 @@ namespace SharePost.Helpers
                 RefreshToken = response.RefreshToken,
                 TokenType = response.TokenType,
                 Username = CommonHelper.GetUserDetails()?.Name,
-                IssuedAt = DateTime.Now.ToString(),
-                ExpiresAt = DateTime.Now.AddMinutes(response.ExpiresIn).ToString()
+                IssuedAt = DateTime.UtcNow.ToString(),
+                ExpiresAt = DateTime.UtcNow.AddMinutes(response.ExpiresIn).ToString()
             };
             Settings.TokenResponse = JsonConvert.SerializeObject(model);
         }
@@ -60,7 +60,7 @@ namespace SharePost.Helpers
         {
             TokenModelResponse model = GetTokenResponse();
             DateTime expiringTime = DateTime.Parse(model.ExpiresAt);
-            return model == null || DateTime.Now > expiringTime || (expiringTime == DateTime.MinValue);
+            return model == null || DateTime.UtcNow > expiringTime || (expiringTime == DateTime.MinValue);
         }
         /// <summary>
         /// 

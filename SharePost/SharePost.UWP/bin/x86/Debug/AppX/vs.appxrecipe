@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-14T14:18:58.374</Modified>
+      <Modified>2016-06-15T11:03:32.414</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\SharePost.UWP.exe">
       <PackagePath>entrypoint\SharePost.UWP.exe</PackagePath>
-      <Modified>2016-06-14T14:18:57.584</Modified>
+      <Modified>2016-06-15T11:03:31.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -496,7 +496,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-14T14:18:56.220</Modified>
+      <Modified>2016-06-15T11:03:30.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.dll">
       <PackagePath>Thinktecture.IdentityModel.Client.dll</PackagePath>
@@ -562,7 +562,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Core\SharePost.UWP.exe">
       <PackagePath>SharePost.UWP.exe</PackagePath>
-      <Modified>2016-06-14T14:18:58.371</Modified>
+      <Modified>2016-06-15T11:03:32.411</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
