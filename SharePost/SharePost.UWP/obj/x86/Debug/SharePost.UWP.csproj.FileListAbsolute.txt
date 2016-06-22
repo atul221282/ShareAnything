@@ -114,6 +114,10 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.Reade
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.Abstractions.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.Abstractions.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.Geolocator.dll
@@ -125,7 +129,9 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Pl
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\SharePost.dll
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Thinktecture.IdentityModel.Client.dll
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\SharePost.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Thinktecture.IdentityModel.Client.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\SharePost.UWP.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\App.g.i.cs
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\App.g.cs
@@ -210,9 +216,3 @@ C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.res
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.dll
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.Abstractions.pdb
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.dll
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Plugin.DeviceInfo.pdb
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Thinktecture.IdentityModel.Client.dll
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\Thinktecture.IdentityModel.Client.pdb

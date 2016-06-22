@@ -88,9 +88,17 @@ namespace SharePost.View
         /// <param name="position">The position.</param>
         private void LoadPostsByPosition(Position position)
         {
-            var result = vm.GetPosts(position.Longitude, position.Latitude);
-            vm.PostText = EndpointAndTokenHelper.GetTokenResponse().RefreshToken +
-                EndpointAndTokenHelper.GetTokenResponse().ExpiresAt.ToString();
+            try
+            {
+                var result = vm.GetPosts(position.Longitude, position.Latitude);
+                vm.PostText = EndpointAndTokenHelper.GetTokenResponse()?.RefreshToken +
+                    EndpointAndTokenHelper.GetTokenResponse()?.ExpiresAt.ToString();
+            }
+            catch(Exception ex)
+            {
+                vm.ClearAllSettings();
+                CommonHelper.SetMainPage(new Login());
+            }
         }
 
     }

@@ -61,28 +61,18 @@ namespace SharePost.Helpers
                     new Uri(ShareAnythingConstants.IdSrvToken),
                     GlobalConstants.resourceOwnerCredFlowClientId,
                     GlobalConstants.resourceOwnerCredFlowSecret);
-                try
+                var tokenEndpointResponse = tokenEndpointClient
+                    .RequestRefreshTokenAsync(EndpointAndTokenHelper.GetTokenResponse().RefreshToken).Result;
+                if (!tokenEndpointResponse.IsError)
                 {
-                    var tokenEndpointResponse = tokenEndpointClient
-                        .RequestRefreshTokenAsync(EndpointAndTokenHelper.GetTokenResponse().RefreshToken).Result;
-                    if (!tokenEndpointResponse.IsError)
-                    {
-                        // replace the claims with the new values - this means creating a 
-                        // new identity!                              
-                        var result = tokenEndpointResponse as TokenResponse;
-                        EndpointAndTokenHelper.SetToken(result);
-                    }
-                    else
-                    {
-                        // log, ...
-                        throw new Exception("An error has occurred while refreshing token");
-                    }
+                    var result = tokenEndpointResponse as TokenResponse;
+                    EndpointAndTokenHelper.SetToken(result);
                 }
-                catch (Exception ex)
+                else
                 {
-                    var ff = ex;
+                    // log, ...
+                    throw new Exception("An error has occurred while refreshing token");
                 }
-                
             }
 
         }

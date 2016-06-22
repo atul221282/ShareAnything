@@ -357,16 +357,16 @@
     <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xam.Plugins.Settings\2.1.0\lib\UAP10\Plugin.Settings.dll">
       <PackagePath>Plugin.Settings.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
@@ -411,10 +411,10 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.2.0.45\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
+    <AppxPackagedFile Include="C:\Users\AtulChaudhary\.nuget\packages\Xamarin.Forms\2.3.0.49\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\resources.pri">

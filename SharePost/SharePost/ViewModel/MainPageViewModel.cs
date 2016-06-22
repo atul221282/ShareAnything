@@ -1,6 +1,7 @@
 ﻿using SharePost.Helpers;
 using SharePost.Model;
 using SharePost.Model.Post;
+using SharePost.View.Account;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,22 +48,13 @@ namespace SharePost.ViewModel
 
         public string GetPosts(double longitude, double latitude)
         {
-            string result = string.Empty;
-            try
+            using (HttpClient client = SharePostClient.GetClient(true))
             {
-
-                using (HttpClient client = SharePostClient.GetClient(true))
-                {
-                    result = client
-                        .GetStringAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude))
-                        .Result;
-                }
+                string result = client
+                    .GetStringAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude))
+                    .Result;
+                return result;
             }
-            catch (Exception ex)
-            {
-                result = ex.Message;
-            }
-            return result;
         }
 
         private static List<PostModel> CreatePopsts()

@@ -84,6 +84,8 @@ namespace SharePost.View.Account
                 CommonHelper.SetMainPage(new MainPage(position));
                 vm.IsLoading = false;
             }
+            else
+                vm.ClearAllSettings();
 
         }
     }

@@ -7,6 +7,8 @@ C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\AppxManifest.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.build.appxrecipe
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Geolocator.Abstractions.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Geolocator.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Settings.Abstractions.dll
@@ -19,8 +21,13 @@ C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Pl
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.dll
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Geolocator.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Geolocator.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.Geolocator.Abstractions.pdb
@@ -33,6 +40,7 @@ C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Co
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.pdb
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\SharePost.Windows.csprojResolveAssemblyReference.cache
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\App.g.i.cs
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\App.g.cs
@@ -72,11 +80,3 @@ C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\MultipleQualifie
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
 C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\ProjectArchitectures.txt
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.pdb
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.xml
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.pdb
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Plugin.DeviceInfo.Abstractions.xml
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.dll
-C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\Thinktecture.IdentityModel.Client.pdb
