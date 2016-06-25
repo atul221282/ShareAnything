@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Plugin.Geolocator.Abstractions;
 using SharePost.Helpers;
+using System.Diagnostics;
 
 namespace SharePost.View
 {
@@ -29,7 +30,6 @@ namespace SharePost.View
         public MainPage(Position position) : this()
         {
             this.position = position;
-            LoadPostsByPosition(position);
         }
 
 
@@ -86,19 +86,27 @@ namespace SharePost.View
         /// Loads the posts by position.
         /// </summary>
         /// <param name="position">The position.</param>
-        private void LoadPostsByPosition(Position position)
+        async private void LoadPostsByPosition(Position position)
         {
+            vm.IsLoading = true;
             try
             {
-                var result = vm.GetPosts(position.Longitude, position.Latitude);
+                var result = await vm.GetPosts(position.Longitude, position.Latitude);
                 vm.PostText = EndpointAndTokenHelper.GetTokenResponse()?.RefreshToken +
                     EndpointAndTokenHelper.GetTokenResponse()?.ExpiresAt.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+                vm.IsLoading = false;
+                await DisplayAlert("Alert", ex.Message, "Ok");
                 vm.ClearAllSettings();
-                CommonHelper.SetMainPage(new Login());
+                CommonHelper.SetLoginPage();
             }
+        }
+
+        async protected override void OnAppearing()
+        {
+            LoadPostsByPosition(this.position);
         }
 
     }

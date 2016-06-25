@@ -1,15 +1,16 @@
 ﻿using Newtonsoft.Json.Linq;
-using Plugin.DeviceInfo;
-using Plugin.DeviceInfo.Abstractions;
 using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using SharePost.Helpers;
 using SharePost.Model;
 using System;
 using System.ComponentModel;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Linq;
+using Newtonsoft.Json;
 
 namespace SharePost.ViewModel
 {
@@ -50,7 +51,6 @@ namespace SharePost.ViewModel
                 return !string.IsNullOrWhiteSpace(model?.RefreshToken)
                     && !string.IsNullOrWhiteSpace(model?.AccessToken);
             }
-
         }
 
         /// <summary>
@@ -73,14 +73,35 @@ namespace SharePost.ViewModel
 
         async public virtual Task<Position> GetLocation()
         {
-            
+
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
             var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-            
+
             return position;
         }
 
+
+        async public virtual Task<T> HandleApiResponse<T>(HttpResponseMessage response) where T : class
+        {
+            if (!response.IsSuccessStatusCode)
+            {
+                var content = JObject.Parse(await response.Content.ReadAsStringAsync());
+                var errorMessages = content["ExceptionMessage"] != null ? content["ExceptionMessage"].ToString().Split('|').ToArray() : null;
+                //request.CreateResponse<string[]>(HttpStatusCode.InternalServerError, errorMessages, new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"));
+                if (errorMessages != null)
+                {
+                    foreach (string error in errorMessages)
+                    {
+                        int i = 0;
+                        //ModelState.AddModelError(string.Empty, error);
+                        i++;
+                    }
+                }
+                throw new HttpRequestException(string.Join(",", errorMessages));
+            }
+            return JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync());
+        }
 
         public virtual void ClearAllSettings()
         {
@@ -88,13 +109,13 @@ namespace SharePost.ViewModel
             Settings.TokenResponse = string.Empty;
             Settings.UserDetails = string.Empty;
         }
+
+
         #region "OnProperty"
         /// <summary>
         /// Occurs when a property value changes.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
-
-
 
         #region INotifyPropertyChanged implementation      
 

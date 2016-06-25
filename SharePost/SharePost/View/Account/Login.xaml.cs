@@ -28,12 +28,6 @@ namespace SharePost.View.Account
             //vm.ClearAllSettings();
         }
 
-        /// <summary>
-        /// Navigates the user.
-        /// </summary>
-        /// <param name="login">The login.</param>
-        /// <exception cref="System.NotImplementedException"></exception>
-
 
         /// <summary>
         /// Called when [clicked_btn login].
@@ -45,6 +39,8 @@ namespace SharePost.View.Account
             try
             {
                 vm.Login();
+                var Position = await vm.GetLocation();
+                CommonHelper.SetNavigationPage(new MainPage(Position));
             }
             catch (Exception ex)
             {
@@ -57,6 +53,7 @@ namespace SharePost.View.Account
         {
             vm.ClearAllSettings();
         }
+
         /// <summary>
         /// Called when [clicked_btn register].
         /// </summary>
@@ -81,8 +78,8 @@ namespace SharePost.View.Account
             {
                 vm.IsLoading = true;
                 var position = await vm.GetLocation();
-                CommonHelper.SetMainPage(new MainPage(position));
                 vm.IsLoading = false;
+                CommonHelper.SetNavigationPage(new MainPage(position));
             }
             else
                 vm.ClearAllSettings();

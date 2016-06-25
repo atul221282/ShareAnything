@@ -46,14 +46,13 @@ namespace SharePost.ViewModel
         }
 
 
-        public string GetPosts(double longitude, double latitude)
+        async public Task<string> GetPosts(double longitude, double latitude)
         {
             using (HttpClient client = SharePostClient.GetClient(true))
             {
-                string result = client
-                    .GetStringAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude))
-                    .Result;
-                return result;
+                var result = client.GetAsync(string.Format("api/sharepost/GetPostTransport?longitude={0}&latitude={1}", longitude, latitude)).Result;
+                var mm = await HandleApiResponse<HttpResponseMessage>(result);
+                return "";
             }
         }
 

@@ -8,7 +8,8 @@ namespace SharePost.Helpers
 {
     public class ShareAnythingConstants
     {
-        public const string host = "http://192.168.0.7/";
+        public const string host = "http://192.168.0.10/";
+        //public const string host = "http://172.17.69.125/";
         public const string ExpenseTrackerAPI = host + "ShareAnything.API/";
 
         public const string ExpenseTrackerClientBaseUrl = host + "ShareAnything/";

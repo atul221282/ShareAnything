@@ -8,7 +8,7 @@
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugin.geolocator.3.0.4\lib\wpa81\plugin.geolocator.dll" HashGuid="618defcf-6366-faf9-0828-d0d769893df2" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugins.settings.2.1.0\lib\wpa81\plugin.settings.abstractions.dll" HashGuid="2b0e2d63-0984-03e6-e1dc-77d16c51778c" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xam.plugins.settings.2.1.0\lib\wpa81\plugin.settings.dll" HashGuid="a18bed2b-0275-cca7-9572-a50ae2a97cfe" />
-    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="75d033c6-505b-a782-3ff6-c001d0b1117a" />
+    <ReferenceAssembly PathName="c:\projects\shareanything\sharepost\sharepost\bin\debug\sharepost.dll" HashGuid="97a45900-dd5a-58a0-240b-990f41ec6cd3" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
     <ReferenceAssembly PathName="c:\projects\shareanything\packages\xamarin.forms.2.3.0.49\lib\wpa81\xamarin.forms.core.dll" HashGuid="c30391b9-f93a-55bc-3bed-bad91032c5ef" />

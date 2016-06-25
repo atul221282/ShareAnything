@@ -87,8 +87,7 @@ namespace SharePost.ViewModel.Account
                     EndpointAndTokenHelper.SetToken(await result.Content.ReadAsStringAsync());
                     var userDetails = await EndpointAndTokenHelper
                         .CallUserInfoEndpoint(EndpointAndTokenHelper.GetTokenResponse().AccessToken);
-                    Position = await GetLocation();
-                    CommonHelper.SetMainPage(new MainPage(Position));
+                    
                 }
             }
             this.IsLoading = false;

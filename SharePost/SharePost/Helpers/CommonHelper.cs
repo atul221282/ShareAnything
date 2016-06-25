@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SharePost.Model;
+using SharePost.View.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,14 @@ namespace SharePost.Helpers
 
        
 
-        public static void SetMainPage(Page page)
+        public static void SetNavigationPage(Page page)
         {
             App.Current.MainPage = new NavigationPage(page);
+        }
+
+        public static void SetLoginPage()
+        {
+            App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new Login()));
         }
     }
 }
