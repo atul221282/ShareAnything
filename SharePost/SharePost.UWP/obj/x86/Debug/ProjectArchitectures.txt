@@ -1,2 +1,2 @@
-C:\Projects\ShareAnything\SharePost\SharePost.UWP\SharePost.UWP.csproj;x86
-C:\Projects\ShareAnything\SharePost\SharePost\SharePost.csproj;neutral
+C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\SharePost.UWP.csproj;x86
+C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\SharePost.csproj;neutral
