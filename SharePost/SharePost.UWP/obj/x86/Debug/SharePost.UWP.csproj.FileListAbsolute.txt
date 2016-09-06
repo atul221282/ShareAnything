@@ -434,3 +434,4 @@ C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\r
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost.UWP\bin\x86\Debug\XLabs.IOC.dll

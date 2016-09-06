@@ -13,11 +13,13 @@ using Newtonsoft.Json.Linq;
 using Plugin.DeviceInfo;
 using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
+using SharePost.ServiceContract;
 
 namespace SharePost.ViewModel.Account
 {
     public class LoginViewModel : BaseViewModel
     {
+
         #region "Property"
         private string _userName;
         private string _password;
@@ -70,26 +72,20 @@ namespace SharePost.ViewModel.Account
 
         #endregion
 
+        private readonly ILoginService LoginService;
+
+        public LoginViewModel(ILoginService loginService)
+        {
+            LoginService = loginService;
+        }
+
         /// <summary>
         /// Logins this instance.
         /// </summary>
-        public async void Login()
+        public async Task Login()
         {
             this.IsLoading = true;
-            using (HttpClient client = SharePostClient.GetClient(false))
-            {
-                var url = ShareAnythingConstants.ExpenseTrackerAPI + "api/Account/Login";
-                var result = await client.PostStringAsync<object>(url,
-                    new { EmailAddress = this.UserName, Password = this.Password });
-
-                if (result.IsSuccessStatusCode)
-                {
-                    EndpointAndTokenHelper.SetToken(await result.Content.ReadAsStringAsync());
-                    var userDetails = await EndpointAndTokenHelper
-                        .CallUserInfoEndpoint(EndpointAndTokenHelper.GetTokenResponse().AccessToken);
-                    
-                }
-            }
+            await LoginService.LoginAsync(this.UserName, this.Password);
             this.IsLoading = false;
         }
 

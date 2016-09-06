@@ -12,20 +12,30 @@ using System.Threading.Tasks;
 using SharePost.Extension;
 using Xamarin.Forms;
 using Plugin.DeviceInfo;
+using SharePost.Contracts;
+using XLabs.Ioc;
+using SharePost.ServiceContract;
 
 namespace SharePost.View.Account
 {
     public partial class Login
     {
-        LoginViewModel vm;
+        private LoginViewModel ViewModel;
+        private static string UserName = "atul221282@gmail.com";
+        private static string Password = "123456";
         public Login()
         {
-            vm = new LoginViewModel();
-            vm.UserName = "atul221282@gmail.com";
-            vm.Password = "123456";
+            ViewModel = new LoginViewModel(Resolver.Resolve<ILoginService>());
+            SetCredentials();
             InitializeComponent();
-            BindingContext = vm;
+            BindingContext = ViewModel;
             //vm.ClearAllSettings();
+        }
+
+        private void SetCredentials()
+        {
+            ViewModel.UserName = UserName;
+            ViewModel.Password = Password;
         }
 
 
@@ -34,13 +44,13 @@ namespace SharePost.View.Account
         /// </summary>
         /// <param name="sender">The sedner.</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void OnClicked_btnLogin(object sender, EventArgs events)
+        async protected void OnClicked_btnLoginAsync(object sender, EventArgs events)
         {
             try
             {
-                vm.Login();
-                var Position = await vm.GetLocation();
-                CommonHelper.SetNavigationPage(new MainPage(Position));
+                await ViewModel.Login();
+                var position = await ViewModel.GetLocation();
+                CommonHelper.SetNavigationPage(new MainPage(position));
             }
             catch (Exception ex)
             {
@@ -48,20 +58,17 @@ namespace SharePost.View.Account
             }
         }
 
-
-        protected void OnClicked_btnClear(object sender, EventArgs events)
-        {
-            vm.ClearAllSettings();
-        }
+        protected void OnClicked_btnClear(object sender, EventArgs events) => ViewModel.ClearAllSettings();
 
         /// <summary>
         /// Called when [clicked_btn register].
         /// </summary>
-        /// <param name="sender">The sender.</param>
+        /// <param name="sender">The sender from event</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void OnClicked_btnRegister(object sender, EventArgs events)
+        async protected void OnClicked_btnRegisterAsync(object sender, EventArgs events)
         {
-            var register = new NavigationPage(new Register());
+            var isregi = Resolver.IsRegistered<IGeoLocation>();
+            var register = new NavigationPage(new Register(Resolver.Resolve<IGeoLocation>()));
             await Navigation.PushModalAsync(register);
         }
 
@@ -74,16 +81,16 @@ namespace SharePost.View.Account
         async protected override void OnAppearing()
         {
             //Check token expiry time also
-            if (vm.IsUserLoggedIn)
+            if (ViewModel.IsUserLoggedIn)
             {
-                vm.IsLoading = true;
-                var position = await vm.GetLocation();
-                vm.IsLoading = false;
+                ViewModel.IsLoading = true;
+                var position = await ViewModel.GetLocation();
+                ViewModel.IsLoading = false;
                 CommonHelper.SetNavigationPage(new MainPage(position));
             }
             else
-                vm.ClearAllSettings();
-
+                ViewModel.ClearAllSettings();
         }
+
     }
 }

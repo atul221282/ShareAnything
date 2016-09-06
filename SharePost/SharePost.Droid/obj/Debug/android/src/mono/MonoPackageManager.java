@@ -145,6 +145,7 @@ class MonoPackageManager_Resources {
 		"System.Text.RegularExpressions.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Runtime.InteropServices.dll",
+		"XLabs.IOC.dll",
 		"System.Diagnostics.Tools.dll",
 		"System.Runtime.Serialization.Primitives.dll",
 		"System.ComponentModel.Annotations.dll",

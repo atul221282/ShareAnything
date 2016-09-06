@@ -376,6 +376,9 @@
     <AppxPackagedFile Include="C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\bin\Debug\XLabs.IOC.dll">
+      <PackagePath>XLabs.IOC.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.dll">
       <PackagePath>Thinktecture.IdentityModel.Client.dll</PackagePath>
     </AppxPackagedFile>

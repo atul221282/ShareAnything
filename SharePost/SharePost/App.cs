@@ -1,4 +1,7 @@
 ﻿using SharePost.Base;
+using SharePost.Contracts;
+using SharePost.Service;
+using SharePost.ServiceContract;
 using SharePost.View;
 using SharePost.View.Account;
 using System;
@@ -7,6 +10,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XLabs.Ioc;
 
 namespace SharePost
 {
@@ -14,12 +18,21 @@ namespace SharePost
     {
         public App()
         {
-            MainPage = new Login();
+            //https://www.nuget.org/packages?q=xlabs.ioc
+            //https://github.com/XLabs/Xamarin-Forms-Labs/wiki/IOC
+            var container = new SimpleContainer();
+            container.Register<IGeoLocation>(typeof(GeoLocation));
+
+            container.Register<ILoginService>(typeof(LoginService));
+
+            Resolver.SetResolver(container.GetResolver());
+            
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            MainPage = new Login();
         }
 
         protected override void OnSleep()

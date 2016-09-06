@@ -1493,8 +1493,8 @@ Debug.WriteLine (label.Text); //prints "John Doe"
             <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
             <summary>Creates a new instance of the BindablePropertyKey class.</summary>
             <returns />
-            <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
             <remarks />
+            <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
         </member>
         <member name="M:Xamarin.Forms.BindableProperty.CreateReadOnly``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},``1,Xamarin.Forms.BindingMode,Xamarin.Forms.BindableProperty+ValidateValueDelegate{``1},Xamarin.Forms.BindableProperty+BindingPropertyChangedDelegate{``1},Xamarin.Forms.BindableProperty+BindingPropertyChangingDelegate{``1},Xamarin.Forms.BindableProperty+CoerceValueDelegate{``1})">
             <typeparam name="TDeclarer">The type of the declaring object.</typeparam>
@@ -2361,6 +2361,61 @@ namespace FormsGallery
             <summary>Sends a click event.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.Button+ButtonContentLayout">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Button+ButtonContentLayout(Xamarin.Forms.Button+ButtonContentLayout+ImagePosition,System.Double)">
+            <param name="position">To be added.</param>
+            <param name="spacing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Button+ButtonContentLayout.Position">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Button+ButtonContentLayout.Spacing">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Button+ButtonContentLayout.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Button+ButtonContentLayout+ImagePosition">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Button+ButtonContentLayout+ImagePosition.Bottom">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Button+ButtonContentLayout+ImagePosition.Left">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Button+ButtonContentLayout+ImagePosition.Right">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Button+ButtonContentLayout+ImagePosition.Top">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:Xamarin.Forms.Button+ButtonContentTypeConverter">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Button+ButtonContentTypeConverter">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Button+ButtonContentTypeConverter.ConvertFromInvariantString(System.String)">
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.CarouselPage">
             <summary>A Page that users can swipe from side to side to display pages of content, like a gallery.</summary>
             <remarks>
@@ -2626,6 +2681,14 @@ Content = new TableView
         <member name="E:Xamarin.Forms.Cell.Tapped">
             <summary>Occurs when the Cell is Tapped.</summary>
             <remarks />
+        </member>
+        <member name="M:Xamarin.Forms.Cell.Xamarin#Forms#ICellController#SendAppearing">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Cell.Xamarin#Forms#ICellController#SendDisappearing">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.CollectionSynchronizationCallback">
             <param name="collection">The collection that was passed to <see cref="M:Xamarin.Forms.BindingBase.EnableCollectionSynchronization" />.</param>
@@ -3290,7 +3353,7 @@ var button = new Button {
             <remarks>
                 <para>This is a Page displaying a single View, often a container like a <see cref="T:Xamarin.Forms.StackLayout" /> or <see cref="T:Xamarin.Forms.ScrollView" />.</para>
                 <example>
-                    <para>The example below is taken from he App.cs file that is contained in the default "Hello, Forms!" app. It  uses a <see cref="T:Xamarin.Forms.ContenPage" /> to display a label, which is a typical, though basic, use of the <see cref="T:Xamarin.Forms.ContenPage" /> class.</para>
+                    <para>The example below is taken from he App.cs file that is contained in the default "Hello, Forms!" app. It  uses a <see cref="T:Xamarin.Forms.ContentPage" /> to display a label, which is a typical, though basic, use of the <see cref="T:Xamarin.Forms.ContentPage" /> class.</para>
                     <code lang="C#"><![CDATA[
 using System;
 using Xamarin.Forms;
@@ -4265,12 +4328,11 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
             <remarks>To be added.</remarks>
         </member>
         <member name="F:Xamarin.Forms.Easing.BounceIn">
-            <summary>Jumps towards, and then bounces as it settles at the final value. (Note: Known bug in 1.0.0 release)</summary>
+            <summary>
+                <para>Jumps towards, and then bounces as it settles at the final value.</para>
+            </summary>
             <remarks>
-                <para>NOTE: The 1.0.0. release of <see cref="F:Xamarin.Forms.Easing.BounceIn" /> has a known bug and runs backwards. The following graph shows the desired behavior, shortly to be released:</para>
-                <para>
-                    <img href="Easing.BounceIn.png" />
-                </para>
+                <img href="Easing.BounceIn.png" />
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.Easing.BounceOut">
@@ -4459,7 +4521,9 @@ var editor = new Editor {
         </member>
         <member name="T:Xamarin.Forms.Effect">
             <summary>A collection of styles and properties that can be added to an element at run time.</summary>
-            <remarks>To be added.</remarks>
+            <remarks>
+                <para>Effects are suitable when the developer needs to use platform-specific features to achieve the desired effect. Developers should consider using <see cref="T:Xamarin.Forms.Behavior" /> if they do not need platform-specific implentations to achieve their desired result.</para>
+            </remarks>
         </member>
         <member name="P:Xamarin.Forms.Effect.Element">
             <summary>Gets the element to which the style is attached.</summary>
@@ -4671,6 +4735,11 @@ var editor = new Editor {
         </member>
         <member name="P:Xamarin.Forms.Element.Xamarin#Forms#IElementController#EffectControlProvider">
             <summary>For internal use only.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Element.Xamarin#Forms#IElementController#LogicalChildren">
+            <summary>To be added.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
@@ -4926,6 +4995,10 @@ View CreateLoginForm ()
             <summary>Identifies the Text bindable property.</summary>
             <remarks />
         </member>
+        <member name="M:Xamarin.Forms.Entry.Xamarin#Forms#IEntryController#SendCompleted">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.EntryCell">
             <summary>A <see cref="T:Xamarin.Forms.Cell" /> with a label and a single line text entry field.</summary>
             <remarks>
@@ -5095,6 +5168,10 @@ namespace FormsGallery
         <member name="F:Xamarin.Forms.EntryCell.XAlignProperty">
             <summary>Identifies the XAlign bindable property.</summary>
             <remarks />
+        </member>
+        <member name="M:Xamarin.Forms.EntryCell.Xamarin#Forms#IEntryCellController#SendCompleted">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.EventTrigger">
             <summary>Class that represents a triggering event and a list of <see cref="T:Xamarin.Forms.TriggerAction" /> objects that will be invoked when the event is raised.</summary>
@@ -6193,6 +6270,11 @@ namespace FormsGallery
             <returns>A GridLength of type GridUnitType.Absolute and of size absolutesize</returns>
             <remarks />
         </member>
+        <member name="P:Xamarin.Forms.GridLength.Star">
+            <summary>A ready to reuse GridLength of GridUnitType.Star with a Value of 1.</summary>
+            <value />
+            <remarks>If a Value other than 1 is needed with GridUnitType.Star, then use the constructor GridLength (value, GridUnitType.Star).</remarks>
+        </member>
         <member name="M:Xamarin.Forms.GridLength.ToString">
             <summary>Returns the value and the grid unit type, separated by a ".".</summary>
             <returns>To be added.</returns>
@@ -6384,6 +6466,30 @@ namespace FormsGallery
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.IButtonController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IButtonController.SendClicked">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.ICellController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.ICellController.ForceUpdateSizeRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ICellController.SendAppearing">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ICellController.SendDisappearing">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.IDefinition">
             <summary>Interface defining the type of <see cref="T:Xamarin.Forms.RowDefinition" /> and <see cref="T:Xamarin.Forms.ColumnDefinition" />.</summary>
             <remarks>
@@ -6415,6 +6521,11 @@ namespace FormsGallery
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
+        <member name="P:Xamarin.Forms.IElementController.LogicalChildren">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.IElementController.SetValueFromRenderer(Xamarin.Forms.BindableProperty,System.Object)">
             <param name="property">To be added.</param>
             <param name="value">To be added.</param>
@@ -6425,6 +6536,22 @@ namespace FormsGallery
             <param name="propertyKey">To be added.</param>
             <param name="value">To be added.</param>
             <summary>Sets a bound property value from a renderer without breaking the binding.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IEntryCellController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IEntryCellController.SendCompleted">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IEntryController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IEntryController.SendCompleted">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.IExtendedTypeConverter">
@@ -6449,6 +6576,37 @@ namespace FormsGallery
         <member name="T:Xamarin.Forms.IGestureRecognizer">
             <summary>The base interface all gesture recognizers must implement.</summary>
             <remarks>This interface is currently empty, this will likely change.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IImageController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IImageController.SetIsLoading(System.Boolean)">
+            <param name="isLoading">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IItemsView`1">
+            <typeparam name="T">To be added.</typeparam>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IItemsView`1.CreateDefault(System.Object)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IItemsView`1.SetupContent(T,System.Int32)">
+            <param name="content">To be added.</param>
+            <param name="index">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IItemsView`1.UnhookContent(T)">
+            <param name="content">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.IItemViewController">
             <summary>To be added.</summary>
@@ -6498,6 +6656,86 @@ namespace FormsGallery
         <member name="P:Xamarin.Forms.ILayoutController.Children">
             <summary>Gets a read-only list of the immediate children of the renderer that implements the interface.</summary>
             <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IListProxy">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.IListProxy.CollectionChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IListProxy.ProxiedEnumerable">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IListViewController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IListViewController.CachingStrategy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.CreateDefaultCell(System.Object)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IListViewController.FooterElement">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.GetDisplayTextFromGroup(System.Object)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IListViewController.HeaderElement">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)">
+            <param name="index">To be added.</param>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)">
+            <param name="index">To be added.</param>
+            <param name="inGroupIndex">To be added.</param>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IListViewController.RefreshAllowed">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.IListViewController.ScrollToRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.SendCellAppearing(Xamarin.Forms.Cell)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.SendCellDisappearing(Xamarin.Forms.Cell)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IListViewController.SendRefreshing">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Image">
@@ -6600,6 +6838,11 @@ indicator.BindingContext = image;]]></code>
         <member name="F:Xamarin.Forms.Image.SourceProperty">
             <summary>Identifies the Source bindable property.</summary>
             <remarks />
+        </member>
+        <member name="M:Xamarin.Forms.Image.Xamarin#Forms#IImageController#SetIsLoading(System.Boolean)">
+            <param name="isLoading">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.ImageCell">
             <summary>A <see cref="T:Xamarin.Forms.TextCell" /> that has an image.</summary>
@@ -6798,6 +7041,56 @@ namespace FormsGallery
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.IMasterDetailPageController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.IMasterDetailPageController.BackButtonPressed">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMasterDetailPageController.CanChangeIsPresented">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMasterDetailPageController.DetailBounds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMasterDetailPageController.MasterBounds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMasterDetailPageController.ShouldShowSplitMode">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IMasterDetailPageController.UpdateMasterBehavior">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IMenuItemController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IMenuItemController.Activate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMenuItemController.IsEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.IMenuItemController.IsEnabledPropertyName">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.INativeElementView">
             <summary>Interface that contains a read-only property that returns the platform-specific native view for a Xamarin.Forms element.</summary>
             <remarks>To be added.</remarks>
@@ -6935,6 +7228,47 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
             <summary>Removes the specified page from the navigation stack.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.INavigationPageController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.INavigationPageController.InsertPageBeforeRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.INavigationPageController.PopAsyncInner(System.Boolean,System.Boolean)">
+            <param name="animated">To be added.</param>
+            <param name="fast">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.INavigationPageController.PopRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.INavigationPageController.PopToRootRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.INavigationPageController.PushRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.INavigationPageController.RemovePageRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.INavigationPageController.StackCopy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.INavigationPageController.StackDepth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.InputView">
             <summary>The base class of a view which can take keyboard input.</summary>
             <remarks>The constructor of this class is internal. Forms does not provide any renderer for InputView base class.</remarks>
@@ -6948,11 +7282,19 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
             <summary>Identifies the Keyboard bindable property.</summary>
             <remarks />
         </member>
-        <member name="T:Xamarin.Forms.IOpenGLViewController">
+        <member name="T:Xamarin.Forms.IOpenGlViewController">
             <summary>A view controller for displaying OpenGL content.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="E:Xamarin.Forms.IOpenGLViewController.DisplayRequested">
+        <member name="E:Xamarin.Forms.IOpenGlViewController.DisplayRequested">
+            <summary>Event that is raised when an OpenGL display is requested.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IOpenGlViewController">
+            <summary>A view controller for displaying OpenGL content.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.IOpenGlViewController.DisplayRequested">
             <summary>Event that is raised when an OpenGL display is requested.</summary>
             <remarks>To be added.</remarks>
         </member>
@@ -7041,60 +7383,232 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
         <paramref name="y" />).</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="T:Xamarin.Forms.ItemsView">
+        <member name="T:Xamarin.Forms.ISearchBarController">
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="P:Xamarin.Forms.ItemsView.ItemsSource">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="F:Xamarin.Forms.ItemsView.ItemsSourceProperty">
+        <member name="M:Xamarin.Forms.ISearchBarController.OnSearchButtonPressed">
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="P:Xamarin.Forms.ItemsView.ItemTemplate">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="F:Xamarin.Forms.ItemsView.ItemTemplateProperty">
+        <member name="T:Xamarin.Forms.IStreamImageSource">
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="M:Xamarin.Forms.ItemsView.OnPropertyChanged(System.String)">
-            <param name="propertyName">To be added.</param>
-            <summary>To be added.</summary>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="M:Xamarin.Forms.ItemsView.Xamarin#Forms#IItemViewController#BindView(Xamarin.Forms.View,System.Object)">
-            <param name="view">To be added.</param>
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="P:Xamarin.Forms.ItemsView.Xamarin#Forms#IItemViewController#Count">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="M:Xamarin.Forms.ItemsView.Xamarin#Forms#IItemViewController#CreateView(System.Object)">
-            <param name="type">To be added.</param>
+        <member name="M:Xamarin.Forms.IStreamImageSource.GetStreamAsync(System.Threading.CancellationToken)">
+            <param name="userToken">To be added.</param>
             <summary>To be added.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
-        <member name="M:Xamarin.Forms.ItemsView.Xamarin#Forms#IItemViewController#GetItem(System.Int32)">
+        <member name="T:Xamarin.Forms.ITableModel">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetCell(System.Int32,System.Int32)">
+            <param name="section">To be added.</param>
+            <param name="row">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetHeaderCell(System.Int32)">
+            <param name="section">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetItem(System.Int32,System.Int32)">
+            <param name="section">To be added.</param>
+            <param name="row">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetRowCount(System.Int32)">
+            <param name="section">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetSectionCount">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetSectionIndexTitles">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.GetSectionTitle(System.Int32)">
+            <param name="section">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.RowLongPressed(System.Int32,System.Int32)">
+            <param name="section">To be added.</param>
+            <param name="row">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.RowSelected(System.Object)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITableModel.RowSelected(System.Int32,System.Int32)">
+            <param name="section">To be added.</param>
+            <param name="row">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.ITableViewController">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITableViewController.Model">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.ITableViewController.ModelChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.ITemplatedItemsList`1">
+            <typeparam name="TItem">To be added.</typeparam>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexForGroup(Xamarin.Forms.ITemplatedItemsList{TItem})">
+            <param name="group">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGlobalIndexOfItem(System.Object)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGroup(System.Int32)">
             <param name="index">To be added.</param>
             <summary>To be added.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
-        <member name="M:Xamarin.Forms.ItemsView.Xamarin#Forms#IItemViewController#GetItemType(System.Object)">
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object)">
             <param name="item">To be added.</param>
             <summary>To be added.</summary>
             <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object,System.Object)">
+            <param name="group">To be added.</param>
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)">
+            <param name="globalIndex">To be added.</param>
+            <param name="leftOver">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.ITemplatedItemsList`1.GroupedCollectionChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.HeaderContent">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.IndexOf(TItem)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.ItemsSource">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.ListProxy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.Name">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.ITemplatedItemsList`1.PropertyChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsList`1.ShortNames">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.UpdateContent(TItem,System.Int32)">
+            <param name="content">To be added.</param>
+            <param name="index">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.UpdateHeader(TItem,System.Int32)">
+            <param name="content">To be added.</param>
+            <param name="groupIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.ITemplatedItemsListScrollToRequestedEventArgs">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsListScrollToRequestedEventArgs.Group">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsListScrollToRequestedEventArgs.Item">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.ITemplatedItemsView`1">
+            <typeparam name="TItem">To be added.</typeparam>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsView`1.ListProxy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.ITemplatedItemsView`1.PropertyChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ITemplatedItemsView`1.TemplatedItems">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.ItemsView`1">
@@ -7223,6 +7737,16 @@ void SetupView()
             <summary>Internal use only.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView{TVisual}#ListProxy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ItemsView`1.Xamarin#Forms#ITemplatedItemsView{TVisual}#TemplatedItems">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.ItemTappedEventArgs">
             <summary>Event arguments for the <see cref="E:Xamarin.Forms.ListView.ItemTapped" /> event.</summary>
             <remarks>To be added.</remarks>
@@ -7297,8 +7821,28 @@ void SetupView()
             <summary>Method that is called when the native size of a visual element changes.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.IVisualElementController.InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)">
+            <param name="trigger">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.IVisualElementController.NativeSizeChanged">
             <summary>When implemented in a renderer, called to invalidate the layout when the native size of a visual element changes.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.IWebViewDelegate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IWebViewDelegate.LoadHtml(System.String,System.String)">
+            <param name="html">To be added.</param>
+            <param name="baseUrl">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.IWebViewDelegate.LoadUrl(System.String)">
+            <param name="url">To be added.</param>
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Keyboard">
@@ -7331,6 +7875,11 @@ void SetupView()
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
+        <member name="P:Xamarin.Forms.Keyboard.Plain">
+            <summary>Returns a new keyboard with None <see cref="T:Xamarin.Forms.KeyboardFlags" /> ".</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="P:Xamarin.Forms.Keyboard.Telephone">
             <summary>Gets an instance of type "TelephoneKeyboard".</summary>
             <value>To be added.</value>
@@ -7355,6 +7904,9 @@ void SetupView()
         </member>
         <member name="F:Xamarin.Forms.KeyboardFlags.CapitalizeSentence">
             <summary>Capitalize the first words of sentences.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.KeyboardFlags.None">
+            <summary>No special features provided by the keyboard.</summary>
         </member>
         <member name="F:Xamarin.Forms.KeyboardFlags.Spellcheck">
             <summary>Perform spellcheck on text that the user enters.</summary>
@@ -8588,16 +9140,6 @@ ListView CreateListView()
             <summary>Raises the <see cref="E:Xamarin.Forms.ListView.ItemDisappearing" /> event for <paramref name="cell" />.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#FooterElement">
-            <summary>Internal.</summary>
-            <value>To be added.</value>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#HeaderElement">
-            <summary>Internal.</summary>
-            <value>To be added.</value>
-            <remarks>To be added.</remarks>
-        </member>
         <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListOrCarouselViewController#SendCellAppearing(Xamarin.Forms.Cell)">
             <param name="cell">To be added.</param>
             <summary>Internal.</summary>
@@ -8606,6 +9148,61 @@ ListView CreateListView()
         <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListOrCarouselViewController#SendCellDisappearing(Xamarin.Forms.Cell)">
             <param name="cell">To be added.</param>
             <summary>Internal.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#CachingStrategy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#CreateDefaultCell(System.Object)">
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#FooterElement">
+            <summary>Internal.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#GetDisplayTextFromGroup(System.Object)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#HeaderElement">
+            <summary>Internal.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#NotifyRowTapped(System.Int32,Xamarin.Forms.Cell)">
+            <param name="index">To be added.</param>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#NotifyRowTapped(System.Int32,System.Int32,Xamarin.Forms.Cell)">
+            <param name="index">To be added.</param>
+            <param name="inGroupIndex">To be added.</param>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#RefreshAllowed">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#SendCellAppearing(Xamarin.Forms.Cell)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#SendCellDisappearing(Xamarin.Forms.Cell)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ListView.Xamarin#Forms#IListViewController#SendRefreshing">
@@ -8836,6 +9433,30 @@ namespace FormsGallery
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
+        <member name="P:Xamarin.Forms.MasterDetailPage.Xamarin#Forms#IMasterDetailPageController#CanChangeIsPresented">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.MasterDetailPage.Xamarin#Forms#IMasterDetailPageController#DetailBounds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.MasterDetailPage.Xamarin#Forms#IMasterDetailPageController#MasterBounds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.MasterDetailPage.Xamarin#Forms#IMasterDetailPageController#ShouldShowSplitMode">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.MasterDetailPage.Xamarin#Forms#IMasterDetailPageController#UpdateMasterBehavior">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.MeasureFlags">
             <summary>Enumerates values that tell whether margins are included when laying out windows.</summary>
             <remarks>To be added.</remarks>
@@ -8943,6 +9564,20 @@ namespace FormsGallery
         </member>
         <member name="F:Xamarin.Forms.MenuItem.TextProperty">
             <summary>Identifies the text bound property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.MenuItem.Xamarin#Forms#IMenuItemController#Activate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.MenuItem.Xamarin#Forms#IMenuItemController#IsEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.MenuItem.Xamarin#Forms#IMenuItemController#IsEnabledPropertyName">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.MessagingCenter">
@@ -9536,6 +10171,23 @@ public class MyPage : NavigationPage
             <summary>Indicates the <see cref="M:Xamarin.Forms.NavigationPage.SetTitleIcon" />/<see cref="M:Xamarin.Forms.NavigationPage.GetTitleIcon" /> property.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#PopAsyncInner(System.Boolean,System.Boolean)">
+            <param name="animated">To be added.</param>
+            <param name="fast">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#StackCopy">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#StackDepth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.OnIdiom`1">
             <typeparam name="T">To be added.</typeparam>
             <summary>Provides idiom-specific implementation of T for the current TargetIdiom.</summary>
@@ -9871,6 +10523,14 @@ namespace MyFirstFormsApp.WinPhone
             <summary>Creates a new <see cref="T:Xamarin.Forms.Page" /> element with default values.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="F:Xamarin.Forms.Page.ActionSheetSignalName">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Page.AlertSignalName">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="E:Xamarin.Forms.Page.Appearing">
             <summary>Indicates that the <see cref="T:Xamarin.Forms.Page" /> is about to appear.</summary>
             <remarks>To be added.</remarks>
@@ -9882,6 +10542,10 @@ namespace MyFirstFormsApp.WinPhone
         </member>
         <member name="F:Xamarin.Forms.Page.BackgroundImageProperty">
             <summary>Identifies the <see cref="P:Xamarin.Forms.Page.BackgroundImage" /> property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Page.BusySetSignalName">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="E:Xamarin.Forms.Page.Disappearing">
@@ -10015,6 +10679,29 @@ namespace MyFirstFormsApp.WinPhone
         </member>
         <member name="M:Xamarin.Forms.Page.UpdateChildrenLayout">
             <summary>Requests that the children <see cref="T:Xamarin.Forms.Element" />s of the <see cref="T:Xamarin.Forms.Page" /> update their layouts.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Page.Xamarin#Forms#IPageController#ContainerArea">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Page.Xamarin#Forms#IPageController#IgnoresContainerArea">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Page.Xamarin#Forms#IPageController#InternalChildren">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Page.Xamarin#Forms#IPageController#SendAppearing">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Page.Xamarin#Forms#IPageController#SendDisappearing">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.PanGestureRecognizer">
@@ -10372,8 +11059,8 @@ namespace FormsGallery
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Point.op_Equality(Xamarin.Forms.Point,Xamarin.Forms.Point)">
-            <param name="pt_a">A <see cref="T:Xamarin.Forms.Point" /> to be compared.</param>
-            <param name="pt_b">A <see cref="T:Xamarin.Forms.Point" /> to be compared.</param>
+            <param name="ptA">To be added.</param>
+            <param name="ptB">To be added.</param>
             <summary>Whether the two <see cref="T:Xamarin.Forms.Point" />s are equal.</summary>
             <returns>
                 <see langword="true" /> if the two <see cref="T:Xamarin.Forms.Point" />s have equal values.</returns>
@@ -10386,8 +11073,8 @@ namespace FormsGallery
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Point.op_Inequality(Xamarin.Forms.Point,Xamarin.Forms.Point)">
-            <param name="pt_a">A <see cref="T:Xamarin.Forms.Point" /> to be compared.</param>
-            <param name="pt_b">A <see cref="T:Xamarin.Forms.Point" /> to be compared.</param>
+            <param name="ptA">To be added.</param>
+            <param name="ptB">To be added.</param>
             <summary>Whether two points are not equal.</summary>
             <returns>
                 <see langword="true" /> if <paramref name="pt_a" /> and <paramref name="pt_b" /> do not have equivalent X and Y values.</returns>
@@ -11357,22 +12044,33 @@ button.Effects.Add (Effect.Resolve ("com.YourCompany.ShadowEffect"));]]></code>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
+        <member name="P:Xamarin.Forms.ScrollToRequestedEventArgs.Xamarin#Forms#ITemplatedItemsListScrollToRequestedEventArgs#Group">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.ScrollToRequestedEventArgs.Xamarin#Forms#ITemplatedItemsListScrollToRequestedEventArgs#Item">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.ScrollView">
             <summary>An element capable of scrolling if its Content requires.</summary>
             <remarks>
                 <para>  The following example shows the creation of a ScrollView with a large <see cref="T:Xamarin.Forms.StackLayout" /> in it.</para>
                 <example>
                     <code lang="C#"><![CDATA[
-StackLayout stack;
-var scrollview = new ScrollView {
-  Content = new StackLayout {
-    Padding = new Thickness (20),
-  },
-};
+var stack = new StackLayout();
 
-for (var i=0; i<100; i++)
-  stack.Children.Add (new Button { Text = "Foo"});
-              ]]></code>
+for (int i = 0; i < 100; i++)
+{
+    stack.Children.Add(new Button { Text = "Button " + i });
+}
+
+MainPage = new ContentPage
+{
+    Content = new ScrollView { Content = stack }
+};]]></code>
                 </example>
                 <block type="note">Application developers should not nest one <see cref="T:Xamarin.Forms.ScrollView" /> within another. Additionally, they should refrain from nesting them  other elements that can scroll, such as <see cref="T:Xamarin.Forms.WebView" />.</block>
                 <para>
@@ -11698,6 +12396,10 @@ public class App : Application
         </member>
         <member name="F:Xamarin.Forms.SearchBar.TextProperty">
             <summary>Backing store for the <see cref="P:Xamarin.Forms.SearchBar.Text" /> property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.SearchBar.Xamarin#Forms#ISearchBarController#OnSearchButtonPressed">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.SelectedItemChangedEventArgs">
@@ -12493,6 +13195,12 @@ var stackLayout = new StackLayout {
         </member>
         <member name="F:Xamarin.Forms.StreamImageSource.StreamProperty">
             <summary>Backing store for the <see cref="P:Xamarin.Forms.StreamImageSource.Stream" /> property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.StreamImageSource.Xamarin#Forms#IStreamImageSource#GetStreamAsync(System.Threading.CancellationToken)">
+            <param name="userToken">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Style">
@@ -13291,6 +13999,11 @@ public class App : Application
         </member>
         <member name="F:Xamarin.Forms.TableView.RowHeightProperty">
             <summary>Backing store for the row height property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.TableView.Xamarin#Forms#ITableViewController#Model">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.TapGestureRecognizer">
@@ -15067,6 +15780,11 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <value>The X position of this element relative to its parents bounds.</value>
             <remarks>The x value of an element is set during the Layout phase.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#InvalidateMeasure(Xamarin.Forms.Internals.InvalidationTrigger)">
+            <param name="trigger">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.VisualElement.Xamarin#Forms#IVisualElementController#NativeSizeChanged">
             <summary>Invalidates the measure when the native size of the element changes.</summary>
             <remarks>To be added.</remarks>
@@ -15344,6 +16062,56 @@ namespace FormsGallery
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.Internals.CellExtensions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.GetGroup``2(``1)">
+            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TItem">To be added.</typeparam>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.GetGroupHeaderContent``2(``1)">
+            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TItem">To be added.</typeparam>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.GetIndex``2(``1)">
+            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TItem">To be added.</typeparam>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.GetIsGroupHeader``2(``1)">
+            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TItem">To be added.</typeparam>
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.GetPath(Xamarin.Forms.Cell)">
+            <param name="cell">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.CellExtensions.SetIsGroupHeader``2(``1,System.Boolean)">
+            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TItem">To be added.</typeparam>
+            <param name="cell">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="T:Xamarin.Forms.Internals.DynamicResource">
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
@@ -15354,6 +16122,20 @@ namespace FormsGallery
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Internals.DynamicResource.Key">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.EvalRequested">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.EvalRequested(System.String)">
+            <param name="script">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.EvalRequested.Script">
             <summary>To be added.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
@@ -15405,6 +16187,31 @@ namespace FormsGallery
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.Internals.InvalidationTrigger">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.HorizontalOptionsChanged">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.MarginChanged">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.MeasureChanged">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.RendererReady">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.SizeRequestChanged">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.Undefined">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.InvalidationTrigger.VerticalOptionsChanged">
+            <summary>To be added.</summary>
+        </member>
         <member name="T:Xamarin.Forms.Internals.NameScope">
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
@@ -15451,6 +16258,261 @@ namespace FormsGallery
         <member name="M:Xamarin.Forms.Internals.NameScope.Xamarin#Forms#Internals#INameScope#UnregisterName(System.String)">
             <param name="name">To be added.</param>
             <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.NavigationRequestedEventArgs">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NavigationRequestedEventArgs(Xamarin.Forms.Page,System.Boolean,System.Boolean)">
+            <param name="page">To be added.</param>
+            <param name="animated">To be added.</param>
+            <param name="realize">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NavigationRequestedEventArgs(Xamarin.Forms.Page,Xamarin.Forms.Page,System.Boolean)">
+            <param name="page">To be added.</param>
+            <param name="before">To be added.</param>
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.NavigationRequestedEventArgs.Animated">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.NavigationRequestedEventArgs.BeforePage">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.NavigationRequestedEventArgs.Realize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.NavigationRequestedEventArgs.Task">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItems">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Object)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItem">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="newItems">To be added.</param>
+            <param name="oldItems">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItems">To be added.</param>
+            <param name="startingIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItem">To be added.</param>
+            <param name="index">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="newItem">To be added.</param>
+            <param name="oldItem">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="newItems">To be added.</param>
+            <param name="oldItems">To be added.</param>
+            <param name="startingIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItems">To be added.</param>
+            <param name="index">To be added.</param>
+            <param name="oldIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="changedItem">To be added.</param>
+            <param name="index">To be added.</param>
+            <param name="oldIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx(System.Int32,System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object,System.Int32)">
+            <param name="count">To be added.</param>
+            <param name="action">To be added.</param>
+            <param name="newItem">To be added.</param>
+            <param name="oldItem">To be added.</param>
+            <param name="index">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsEx.Count">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsExtensions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsExtensions.Apply(System.Collections.Specialized.NotifyCollectionChangedEventArgs,System.Action{System.Object,System.Int32,System.Boolean},System.Action{System.Object,System.Int32},System.Action)">
+            <param name="self">To be added.</param>
+            <param name="insert">To be added.</param>
+            <param name="removeAt">To be added.</param>
+            <param name="reset">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsExtensions.Apply``1(System.Collections.Specialized.NotifyCollectionChangedEventArgs,System.Collections.Generic.IList{``0},System.Collections.Generic.IList{System.Object})">
+            <typeparam name="TFrom">To be added.</typeparam>
+            <param name="self">To be added.</param>
+            <param name="from">To be added.</param>
+            <param name="to">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.NotifyCollectionChangedEventArgsExtensions.WithCount(System.Collections.Specialized.NotifyCollectionChangedEventArgs,System.Int32)">
+            <param name="e">To be added.</param>
+            <param name="count">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.PreserveAttribute">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.PreserveAttribute">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.PreserveAttribute(System.Boolean,System.Boolean)">
+            <param name="allMembers">To be added.</param>
+            <param name="conditional">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.PreserveAttribute.AllMembers">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.Internals.PreserveAttribute.Conditional">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.Ticker">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.Ticker.Default">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.Ticker.DisableTimer">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.Ticker.EnableTimer">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.Ticker.Insert(System.Func{System.Int64,System.Boolean})">
+            <param name="timeout">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.Ticker.Remove(System.Int32)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Internals.Ticker.SendSignals(System.Int32)">
+            <param name="timestep">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Internals.ToolbarTracker">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.Internals.ToolbarTracker">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.ToolbarTracker.AdditionalTargets">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.Internals.ToolbarTracker.CollectionChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.ToolbarTracker.HaveMasterDetail">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.ToolbarTracker.SeparateMasterDetail">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.ToolbarTracker.Target">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Internals.ToolbarTracker.ToolbarItems">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.IMarkupExtension">

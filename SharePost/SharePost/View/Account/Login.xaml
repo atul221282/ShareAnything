@@ -18,8 +18,8 @@
 
         <Entry x:Name="enEmail" Placeholder="Email" Text="{Binding UserName}"></Entry>
         <Entry x:Name="enPassword" IsPassword="True" Text="{Binding Password}" Placeholder="Password"></Entry>
-        <Button Text="Login" Clicked="OnClicked_btnLogin" x:Name="btnLogin" IsEnabled="{Binding !IsLoading}"></Button>
-        <Button Text="Register" Clicked="OnClicked_btnRegister" x:Name="btnRegister"></Button>
+        <Button Text="Login" Clicked="OnClicked_btnLoginAsync" x:Name="btnLogin" IsEnabled="{Binding !IsLoading}"></Button>
+        <Button Text="Register" Clicked="OnClicked_btnRegisterAsync" x:Name="btnRegister"></Button>
         <Button Text="Clear" Clicked="OnClicked_btnClear" x:Name="btnClear"></Button>
       </StackLayout>
 

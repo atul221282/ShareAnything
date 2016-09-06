@@ -37,7 +37,8 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Base\BaseApplication.cs" />
-    <Compile Include="Contracts\IGeolocation.cs" />
+    <Compile Include="Contracts\GeoLocation.cs" />
+    <Compile Include="Contracts\IGeoLocation.cs" />
     <Compile Include="Converters\NegateBooleanConverter.cs" />
     <Compile Include="Extension\HttpClientExtension.cs" />
     <Compile Include="GlobalConstants.cs" />
@@ -58,6 +59,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ServiceContract\ILoginService.cs" />
+    <Compile Include="Service\LoginService.cs" />
     <Compile Include="ViewModel\Account\LoginViewModel.cs" />
     <Compile Include="ViewModel\Account\RegisterViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
@@ -137,6 +140,10 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.IOC, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\XLabs.IoC.2.3.0-pre02\lib\portable-net45+netcore45+wpa81+wp8+monoandroid+monotouch+xamarinios10+xamarinmac\XLabs.IOC.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SharePost.Contracts;
 using SharePost.Model;
 using SharePost.View.Account;
 using System;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XLabs.Ioc;
 
 namespace SharePost.Helpers
 {
@@ -28,7 +30,8 @@ namespace SharePost.Helpers
 
         public static void SetLoginPage()
         {
-            App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new Login()));
+            App.Current.MainPage.Navigation
+                .PushModalAsync(new NavigationPage(new Login()));
         }
     }
 }

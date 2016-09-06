@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace SharePost.Contracts
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public interface IGeolocation
+    public interface IGeoLocation
     {
+        string GetLocation();
     }
 }

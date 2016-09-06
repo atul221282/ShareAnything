@@ -1,4 +1,5 @@
-﻿using SharePost.ViewModel.Account;
+﻿using SharePost.Contracts;
+using SharePost.ViewModel.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,17 +7,21 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XLabs.Ioc;
 
 namespace SharePost.View.Account
 {
     public partial class Register : ContentPage
     {
-        RegisterViewModel vm;
-        public Register()
+        private RegisterViewModel ViewModel;
+        private IGeoLocation Location;
+        public Register(IGeoLocation location)
         {
-            vm = new RegisterViewModel();
+            Location = location;
+            var loc = Location.GetLocation();
+            ViewModel = new RegisterViewModel();
             InitializeComponent();
-            BindingContext = vm;
+            BindingContext = ViewModel;
         }
 
         /// <summary>
@@ -31,7 +36,8 @@ namespace SharePost.View.Account
 
             base.OnAppearing();
             //NavigationPage.SetHasNavigationBar(this, false);
-            NavigationPage.SetHasNavigationBar(this, Device.OnPlatform<bool>(true, false, true));
+            NavigationPage.SetHasNavigationBar(this,
+                Device.OnPlatform<bool>(true, false, true));
         }
 
         /// <summary>
@@ -39,9 +45,7 @@ namespace SharePost.View.Account
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="events">The <see cref="EventArgs"/> instance containing the event data.</param>
-        async protected void btnHome_Clicked(Object sender, EventArgs events)
-        {
-            App.Current.MainPage = new NavigationPage(new Login());
-        }
+        protected void btnHome_Clicked(object sender, EventArgs events)
+            => App.Current.MainPage = new NavigationPage(new Login());
     }
 }
