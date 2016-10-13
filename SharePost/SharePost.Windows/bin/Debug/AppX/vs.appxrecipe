@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>PC-PAULKERRY</Machine>
-    <WindowsUser>AtulChaudhary</WindowsUser>
+    <Machine>DESKTOP-VEJ2IPS</Machine>
+    <WindowsUser>atulc</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>85930d70-750c-41a6-9b95-03faaed4159c</PackageIdentityName>
-    <IntermediateOutputPath>C:\Projects\ShareAnything\SharePost\SharePost.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>A56DFB81AD3CE61ADCDD0419617BCA980088FF4FD02EC592CB941F9A069B676A</RegisteredManifestChecksum>
+    <PackageIdentityPublisher>CN=joaqu</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Github\ShareAnything\SharePost\SharePost.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>998E7298FAF8A5C3FDAED5B31184CDCBD70303ECFDDFCA6B4C42A99FC881781A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85930d70-750c-41a6-9b95-03faaed4159c_1.0.0.0_neutral__nh7s0b45jarrj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85930d70-750c-41a6-9b95-03faaed4159c_nh7s0b45jarrj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>85930d70-750c-41a6-9b95-03faaed4159c</RegisteredPackageID>
@@ -19,144 +25,149 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-22T04:30:18.670</Modified>
+      <Modified>2016-10-08T14:39:47.433</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.exe">
       <PackagePath>SharePost.Windows.exe</PackagePath>
-      <Modified>2016-06-24T07:19:03.396</Modified>
+      <Modified>2016-10-08T15:07:15.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2016-03-14T11:00:06.000</Modified>
+      <Modified>2016-10-08T14:14:17.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.Abstractions.dll">
       <PackagePath>Plugin.DeviceInfo.Abstractions.dll</PackagePath>
-      <Modified>2016-02-29T15:44:42.000</Modified>
+      <Modified>2016-10-07T10:53:39.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\win8\Plugin.DeviceInfo.dll">
       <PackagePath>Plugin.DeviceInfo.dll</PackagePath>
-      <Modified>2016-02-29T15:44:42.000</Modified>
+      <Modified>2016-10-07T10:53:39.149</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.Abstractions.dll">
       <PackagePath>Plugin.Geolocator.Abstractions.dll</PackagePath>
-      <Modified>2016-01-31T19:10:30.000</Modified>
+      <Modified>2016-10-07T10:53:39.206</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugin.Geolocator.3.0.4\lib\win8\Plugin.Geolocator.dll">
       <PackagePath>Plugin.Geolocator.dll</PackagePath>
-      <Modified>2016-01-31T19:10:30.000</Modified>
+      <Modified>2016-10-07T10:53:39.212</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.Abstractions.dll">
       <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
-      <Modified>2015-12-18T07:36:24.000</Modified>
+      <Modified>2016-10-08T14:14:17.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xam.Plugins.Settings.2.1.0\lib\win8\Plugin.Settings.dll">
       <PackagePath>Plugin.Settings.dll</PackagePath>
-      <Modified>2015-12-18T07:36:24.000</Modified>
+      <Modified>2016-10-08T14:14:17.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll">
       <PackagePath>SharePost.dll</PackagePath>
-      <Modified>2016-06-24T07:19:01.549</Modified>
+      <Modified>2016-10-08T15:07:13.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
-      <Modified>2016-06-01T11:13:03.240</Modified>
+      <Modified>2016-10-07T10:53:38.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
-      <Modified>2016-06-01T11:13:03.268</Modified>
+      <Modified>2016-10-07T10:53:38.822</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.635</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.639</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.dll">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost\bin\Debug\XLabs.IOC.dll">
+      <PackagePath>XLabs.IOC.dll</PackagePath>
+      <Modified>2016-10-07T10:53:41.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost\bin\Debug\Thinktecture.IdentityModel.Client.dll">
       <PackagePath>Thinktecture.IdentityModel.Client.dll</PackagePath>
-      <Modified>2015-03-08T01:34:22.000</Modified>
+      <Modified>2016-10-07T10:53:39.105</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-31T11:08:35.160</Modified>
+      <Modified>2016-10-07T10:53:46.343</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-31T11:08:35.162</Modified>
+      <Modified>2016-10-07T10:53:46.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-31T11:08:35.165</Modified>
+      <Modified>2016-10-07T10:53:46.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-31T11:08:35.166</Modified>
+      <Modified>2016-10-07T10:53:46.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\SharePost.Windows.xr.xml">
       <PackagePath>SharePost.Windows.xr.xml</PackagePath>
-      <Modified>2016-05-31T11:27:02.367</Modified>
+      <Modified>2016-10-07T10:53:46.514</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-06-22T04:30:15.732</Modified>
+      <Modified>2016-10-08T14:39:45.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-22T04:30:15.738</Modified>
+      <Modified>2016-10-08T14:39:45.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.640</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.641</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.642</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\packages\Xamarin.Forms.2.3.0.49\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
-      <Modified>2016-06-16T01:32:40.000</Modified>
+      <Modified>2016-10-08T14:14:17.643</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Github\ShareAnything\SharePost\SharePost.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-24T07:19:04.468</Modified>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-08T15:07:15.925</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -19,7 +19,7 @@ namespace SharePost.Helpers
                 return CrossSettings.Current;
             }
         }
-        
+
         /// <summary>
         /// Gets or sets the user details.
         /// Details like UserId and UserName(aka email),
@@ -51,7 +51,7 @@ namespace SharePost.Helpers
         {
             get
             {
-                return AppSettings.GetValueOrDefault<string>(SettingConstants.skTokenResponse, 
+                return AppSettings.GetValueOrDefault<string>(SettingConstants.skTokenResponse,
                     SettingConstants.skTokenResponseDefault);
             }
             set
@@ -70,7 +70,7 @@ namespace SharePost.Helpers
         {
             get
             {
-                return AppSettings.GetValueOrDefault<DateTime>(SettingConstants.skExpiresAt, 
+                return AppSettings.GetValueOrDefault<DateTime>(SettingConstants.skExpiresAt,
                     SettingConstants.skExpiresAtDefault);
             }
             set

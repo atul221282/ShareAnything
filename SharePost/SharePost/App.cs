@@ -26,13 +26,13 @@ namespace SharePost
             container.Register<ILoginService>(typeof(LoginService));
 
             Resolver.SetResolver(container.GetResolver());
-            
+            MainPage = new Login();
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
-            MainPage = new Login();
+           
         }
 
         protected override void OnSleep()

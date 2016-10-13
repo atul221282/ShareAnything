@@ -1,17 +1,8 @@
-﻿using Plugin.Geolocator;
-using SharePost.Helpers;
-using SharePost.View.Post;
+﻿using SharePost.Helpers;
 using SharePost.ViewModel.Account;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using SharePost.Extension;
 using Xamarin.Forms;
-using Plugin.DeviceInfo;
 using SharePost.Contracts;
 using XLabs.Ioc;
 using SharePost.ServiceContract;
@@ -81,15 +72,15 @@ namespace SharePost.View.Account
         async protected override void OnAppearing()
         {
             //Check token expiry time also
-            if (ViewModel.IsUserLoggedIn)
-            {
-                ViewModel.IsLoading = true;
-                var position = await ViewModel.GetLocation();
-                ViewModel.IsLoading = false;
-                CommonHelper.SetNavigationPage(new MainPage(position));
-            }
-            else
-                ViewModel.ClearAllSettings();
+            //if (ViewModel.IsUserLoggedIn)
+            //{
+            //    ViewModel.IsLoading = true;
+            //    var position = await ViewModel.GetLocation();
+            //    ViewModel.IsLoading = false;
+            //    CommonHelper.SetNavigationPage(new MainPage(position));
+            //}
+            //else
+            //    ViewModel.ClearAllSettings();
         }
 
     }

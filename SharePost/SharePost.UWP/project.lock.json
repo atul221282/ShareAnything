@@ -15665,8 +15665,9 @@
       ]
     },
     "Xamarin.Forms/2.3.0.49": {
-      "sha512": "N4B8Cr98sMh3/peCAiVaJ5XVK7m1YWyKY/KjdRot3XhoIPN1PiKSnGOdfLvaegkyMmcvjLjnQvkmeSWDnRjQwA==",
+      "sha512": "fcOiRJS4zK+mPODTWQRNgHCs6N/7usjkGU1GyBr8284wQXY3GSx4WPJE0Wa4Eo/23TrByiqGDi0Nw0ptQA0a7Q==",
       "type": "package",
+      "path": "Xamarin.Forms/2.3.0.49",
       "files": [
         "Xamarin.Forms.2.3.0.49.nupkg.sha512",
         "Xamarin.Forms.nuspec",
