@@ -97,5 +97,3 @@ C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\obj\Debug\SharePost
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.csprojResolveAssemblyReference.cache
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
 C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
-C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\obj\Debug\SharePost.dll.mdb
-C:\Users\atul\Source\Repos\ShareAnything\SharePost\SharePost\bin\Debug\SharePost.dll.mdb
