@@ -206,3 +206,6 @@ The remote name could not be resolved: 'gcop.watch.masoud.g.e'
 WebException @9/6/2016 10:57:38 PM
 The remote name could not be resolved: 'gcop.watch.masoud.g.e'
 *******************************************************
+WebException @10/18/2016 8:20:10 PM
+The remote name could not be resolved: 'gcop.watch.masoud.g.e'
+*******************************************************
